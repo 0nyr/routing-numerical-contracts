@@ -1,0 +1,153 @@
+{
+  "python": "3.13.13 (main, Apr  7 2026, 18:19:01) [GCC 15.2.0]",
+  "platform": "Linux-6.18.38-x86_64-with-glibc2.42",
+  "variants": [
+    "v011",
+    "v012"
+  ],
+  "exact": false,
+  "jobs": 4,
+  "input_count": 3052,
+  "unavailable": [
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-berlin.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/7ddbe3f6b212c3c4d887ff3cf659160df5a0947f624f5b5e1937277d3e9236c2.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-berlin.atf.json.gz",
+      "materialize_seconds": 0.017938927019713446
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-cincinnati.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/472fb628d1a2779a14cc2290f22575b680efee40dca4e62e387837c87f7e4268.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-cincinnati.atf.json.gz",
+      "materialize_seconds": 0.017512914026156068
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-kyiv.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/ac905aa566dfe22726800b7287dba2128767f8fb7b48da604f3782e5b52b2b16.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-kyiv.atf.json.gz",
+      "materialize_seconds": 0.0180794500047341
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-london.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/f7d28a20818216bfb79ca44b2be131a51d170328c885fbec6e8998ca71aa652a.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-london.atf.json.gz",
+      "materialize_seconds": 0.017874217010103166
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-madrid.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/02678253967aab50a435c502b7e597b2881779b6be2fa17003ff8fb9ff27d997.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-madrid.atf.json.gz",
+      "materialize_seconds": 0.018398024985799566
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-nairobi.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/c6361407e17239cfd98ddd74e2da8fa7abe5aee511bd77bbae579a6c944d5d35.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-nairobi.atf.json.gz",
+      "materialize_seconds": 0.018976057996042073
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-new_york.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/b76007d3d5dab10080046ce4be276d27bd75843a1e837b16d9660483c607dcc9.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-new_york.atf.json.gz",
+      "materialize_seconds": 0.01779073997749947
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-san_francisco.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/2e42e450bc5e3caf555997546c0175766635cfed50e39e7367ade2e3a87f1a2a.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-san_francisco.atf.json.gz",
+      "materialize_seconds": 0.016561094991629943
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-sao_paulo.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/45c58d68d0c781712e0df9378889630b88545fb1e332495bed7350ecf837e3dd.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-sao_paulo.atf.json.gz",
+      "materialize_seconds": 0.018465200992068276
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-seattle.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/4986804d79e28bb34fd9dc29642d87ccc7c6a4ef37dfbf814d5ae12e61301b53.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-seattle.atf.json.gz",
+      "materialize_seconds": 0.01858797701424919
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-berlin.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/c16ec2f2608cdf39e3ea3549c2ad1fc492c85c420ca07283fb82cdb8096c8c13.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-berlin.atf.json.gz",
+      "materialize_seconds": 0.0259587150067091
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-cincinnati.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/e069c5608c8071bdeb864b30fe7cfcea001c8c629ee693155634c690b6cd4162.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-cincinnati.atf.json.gz",
+      "materialize_seconds": 0.026075276982737705
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-kyiv.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/514a5b49590046369ee8da879f984929adb502338db68e64b28962d55b9e75db.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-kyiv.atf.json.gz",
+      "materialize_seconds": 0.025678748002974316
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-london.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/ec1f74f6702c260a2e5d8502e1401ccfe089cc05a00e9eb3e11273dd6d8afba6.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-london.atf.json.gz",
+      "materialize_seconds": 0.02519401701283641
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-madrid.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/112e56963dae4308a7a1f804d06437c1909151d5ad49edb16677cce56ae822cd.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-madrid.atf.json.gz",
+      "materialize_seconds": 0.026109480008017272
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-nairobi.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/a7d11f2d6877f5a007b11d159d6d7330fb53059045b0a90960abb50acbc12caa.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-nairobi.atf.json.gz",
+      "materialize_seconds": 0.02606173002277501
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-new_york.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/147988e4af137aaa4efd5503a364ef330851eaf0e27f7a7561c3109e808f4996.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-new_york.atf.json.gz",
+      "materialize_seconds": 0.04426838000654243
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-san_francisco.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/9b17f911a949a132cd54d748add708dfb453c3dcaa33266f2c454fb32b08f5a0.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-san_francisco.atf.json.gz",
+      "materialize_seconds": 0.025958690996048972
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-sao_paulo.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/da3f630471df429c35b114d90ad5d2b1c210568cdbc9fec3e57884518ef22663.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-sao_paulo.atf.json.gz",
+      "materialize_seconds": 0.02812667901162058
+    },
+    {
+      "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-seattle.bks.FleetCostDuration.json",
+      "cache": "outputs/inputs/38e695c8fbb63a3a58ccec80542883ccd289a77a902b23b58093398ac22636c0.json",
+      "status": "unavailable",
+      "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-seattle.atf.json.gz",
+      "materialize_seconds": 0.025961328006815165
+    }
+  ]
+}

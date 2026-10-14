@@ -1,0 +1,247 @@
+[
+  {
+    "id": "benchmarks/Poryos2026/TDVRP/hong_kong/n=25/poryos-hong_kong-n25-poi/wave-moderate/poryos-hong_kong-n25-poi-wave-moderate.bks.Duration.json",
+    "cache": "outputs/inputs/1db55320dd9c1a910aba6c5351d5acca3eac3e751d23bf0751c62dca3ad6ad48.json",
+    "status": "ready",
+    "sha256": "1cd6238952bb7db2b4a4ce4780cbaf019f896c65a4d62a257c3f870fdae837b1",
+    "materialize_seconds": 0.00035038398345932364
+  },
+  {
+    "id": "benchmarks/Poryos2026/TDVRP/lyon/n=50/poryos-lyon-n50-hyb/wave-moderate/poryos-lyon-n50-hyb-wave-moderate.bks.Duration.json",
+    "cache": "outputs/inputs/61b291fd330140ea325b03358fa99378e965f85f0f9ee0abdb0508b3410cb4b7.json",
+    "status": "ready",
+    "sha256": "ceaefb21863f0489cbf03746fa49dc5780a7b92849a269df7981a493070965b4",
+    "materialize_seconds": 0.0003567000094335526
+  },
+  {
+    "id": "benchmarks/Poryos2026/TDVRP/san_francisco/n=100/poryos-san_francisco-n100-hyb/bpr-heavy/poryos-san_francisco-n100-hyb-bpr-heavy.bks.Duration.json",
+    "cache": "outputs/inputs/a88a32a7d929397936748b536722f989c8a389c26cfb4777e2f47d7b435d00f1.json",
+    "status": "ready",
+    "sha256": "0cd5720986e616595d4fdef5bfdca15b6aa12c6ee6a99a6c6726b5500ad5f3a4",
+    "materialize_seconds": 0.0005358679918572307
+  },
+  {
+    "id": "benchmarks/Poryos2026/TDVRP/tokyo/n=10/poryos-tokyo-n10-poi/wave-light/poryos-tokyo-n10-poi-wave-light.bks.Duration.json",
+    "cache": "outputs/inputs/9479bca1fbea20877cdc610b3903cb2008090d02ed05abfe430d69ec5211e407.json",
+    "status": "ready",
+    "sha256": "8f68cfa2077e27795cebdff8c133cf03cb31e77a23e83d570ca9348ddb75da26",
+    "materialize_seconds": 0.0001331790117546916
+  },
+  {
+    "id": "benchmarks/Poryos2026/TDVRPTW/lyon/n=50/poryos-lyon-n50-poi/bpr-moderate/poryos-lyon-n50-poi-bpr-moderate.bks.Duration.json",
+    "cache": "outputs/inputs/a1b790a2f1efba4dbc91f37da2d7fcab4063711a72cca1a6afed95ea5040ebbf.json",
+    "status": "ready",
+    "sha256": "14afa0907cf2f78a8872d9e86553d742f4ad84182d2b320af639f9fcc18d1574",
+    "materialize_seconds": 0.0002071759954560548
+  },
+  {
+    "id": "benchmarks/Poryos2026/TDVRPTW/paris/n=10/poryos-paris-n10-poi/wave-light/poryos-paris-n10-poi-wave-light.bks.Duration.json",
+    "cache": "outputs/inputs/06216b7903704fd2fafcfd7afdd7323514d7e05e8c57028a976fb3c8425dfb7d.json",
+    "status": "ready",
+    "sha256": "4b8e3e79d6a2d14a375d2c1d67f9b26cf22059acfc4b48a0f97df562355dafb1",
+    "materialize_seconds": 0.00017718601156957448
+  },
+  {
+    "id": "benchmarks/Poryos2026/TDVRPTW/paris/n=25/poryos-paris-n25-poi/bpr-heavy/poryos-paris-n25-poi-bpr-heavy.bks.Duration.json",
+    "cache": "outputs/inputs/648defeff3d86aaa1aed0bd996ae95c3a516d4a5ce6d47f7791d3e171286f806.json",
+    "status": "ready",
+    "sha256": "fde46e70c4343db1604cc8bb50c7d7fc129a74ba0ac4290ed7062354fdc27497",
+    "materialize_seconds": 0.00023800600320100784
+  },
+  {
+    "id": "benchmarks/Poryos2026/TDVRPTW/san_francisco/n=100/poryos-san_francisco-n100-poi/bpr-moderate/poryos-san_francisco-n100-poi-bpr-moderate.bks.Duration.json",
+    "cache": "outputs/inputs/463f9c81b56528341168b170df6791fd3452c4455a01ad1c453f6de08dbba5db.json",
+    "status": "ready",
+    "sha256": "c4dc1502f3064d886e0d8b25941ce139a0621684eb4d4f448731b431de63f4b8",
+    "materialize_seconds": 0.0002989080094266683
+  },
+  {
+    "id": "benchmarks/TDVRP/Ari2018/n=15/Ari-C6-pA-d80-w25.bks.Duration.json",
+    "cache": "outputs/inputs/641e06102cf5bd0325538ccefcbfef45ab68efe94161fab967a0fa023f18c725.json",
+    "status": "ready",
+    "sha256": "4f424b9ae27ddf3e65dcf6b1b1cf9233efc70b68afa2735f9938c81bb5849759",
+    "materialize_seconds": 0.6508124209940434
+  },
+  {
+    "id": "benchmarks/TDVRP/Ari2018/n=20/Ari-C10-pA-d80-w100.bks.Duration.json",
+    "cache": "outputs/inputs/d566c28ffab26a43bbe51419f6b5fa95347d3b39750c17648ddcb9888134ebf3.json",
+    "status": "ready",
+    "sha256": "924a4cbce7f29251821ee800541a0eb4acf703b9bf3055c61cc23c5c69ab9df1",
+    "materialize_seconds": 0.6723227649927139
+  },
+  {
+    "id": "benchmarks/TDVRP/Ari2018/n=30/Ari-B10-pA-d90-w50.bks.Duration.json",
+    "cache": "outputs/inputs/e12ba7d9417f848770718eb0dfb6c193fde453fae6aaf342555a0d73364b89c0.json",
+    "status": "ready",
+    "sha256": "97e655ac286b870029fe618141e030f375b3734e62d92caf50b526c57cb35667",
+    "materialize_seconds": 0.9635294039908331
+  },
+  {
+    "id": "benchmarks/TDVRP/Ari2018/n=40/Ari-B10-pA-d95-w100.bks.Duration.json",
+    "cache": "outputs/inputs/cb2253b2254c099d628cbcf1f06b4b0f518cde963810876879d086c018310da1.json",
+    "status": "ready",
+    "sha256": "ada6beefafab08895bf8e74f5645e140544bad7f5d3e064988088d33ea7de318",
+    "materialize_seconds": 0.7076364500098862
+  },
+  {
+    "id": "benchmarks/TDVRP/Rifki2020/n=10/Rifki-24.bks.Duration.json",
+    "cache": "outputs/inputs/916797674fb1f0a2dc6ba0108fc4749000d29914fb9873955f2d44b520022117.json",
+    "status": "ready",
+    "sha256": "7182a1c7c356abba6b43bd7640a69256c3b72fb030947a7a2f257b5039985b66",
+    "materialize_seconds": 0.03128901502350345
+  },
+  {
+    "id": "benchmarks/TDVRP/Rifki2020/n=20/Rifki-2.bks.Duration.json",
+    "cache": "outputs/inputs/128734da3f7f9144165896ee3eade1f393162fd3239ce7b2b0310cb9d81b944d.json",
+    "status": "ready",
+    "sha256": "bb2f05de186ed5439283861b7eaf181d4012d7faad32381cabeceeca8cf9e873",
+    "materialize_seconds": 0.07390514100552537
+  },
+  {
+    "id": "benchmarks/TDVRP/Rifki2020/n=30/Rifki-12.bks.Duration.json",
+    "cache": "outputs/inputs/596b336c770a0006c2d1b51a9061d6a76c1ef9e0c7976572769e7b63de793edb.json",
+    "status": "ready",
+    "sha256": "b1e875c23eb0545edf36c8dd580f168248ddc92070e6f19b1d3d8823359687e9",
+    "materialize_seconds": 0.15392678100033663
+  },
+  {
+    "id": "benchmarks/TDVRP/Rifki2020/n=40/Rifki-3.bks.Duration.json",
+    "cache": "outputs/inputs/4523c66f84f1e48096bb81d23ea6f6c3fd2c5c753887b2e9f0f46f2461e50069.json",
+    "status": "ready",
+    "sha256": "3f7e05e0cf7ef63abe19982978ea9f262549bbfe3523f297b45bfa85386b02df",
+    "materialize_seconds": 0.2839521539863199
+  },
+  {
+    "id": "benchmarks/TDVRP/Rifki2020/n=50/Rifki-20.bks.Duration.json",
+    "cache": "outputs/inputs/ab922a238845f77c29978a2d0cb01b810a40750c06ce1ba6f544c7b4a84e221e.json",
+    "status": "ready",
+    "sha256": "099df6bb83ab3a2fd7730411784b4b3e334ed24f25aed57c73bc92fd762cd844",
+    "materialize_seconds": 0.5036605780187529
+  },
+  {
+    "id": "benchmarks/TDVRP/Rifki2020/n=60/Rifki-3.bks.Duration.json",
+    "cache": "outputs/inputs/1f1b8fe9517f3584fa023a8b26a12ba706eccf53a32e5c3c2119043a70782ecc.json",
+    "status": "ready",
+    "sha256": "31a5e743fc618040f040ffc0b4d0ff0a31a895f0d7cea4cb9a60b68bfbb91955",
+    "materialize_seconds": 0.7582852840132546
+  },
+  {
+    "id": "benchmarks/TDVRP/Vu2020/n=59/Vu-A2-pB-d98-w60.bks.Duration.json",
+    "cache": "outputs/inputs/f104b05fc8df34354c761a242acc97df94f409b071fc133af084062daef20310.json",
+    "status": "ready",
+    "sha256": "f0f3e0e48ea78970af4a5a5861cd37418d6f0ce2575ac200a2e71c4466b1b88a",
+    "materialize_seconds": 1.4076507620047778
+  },
+  {
+    "id": "benchmarks/TDVRP/Vu2020/n=79/Vu-A3-pA-d80-w60.bks.Duration.json",
+    "cache": "outputs/inputs/7b382bb3f7f60f422be1e9b9beff74d42b1f77ffda42f6ded8b5abb3ff5ac883.json",
+    "status": "ready",
+    "sha256": "75b4cb92364b87918db87190f88c0050da2f259e3d9746a348e57432349f5b5a",
+    "materialize_seconds": 2.757774380996125
+  },
+  {
+    "id": "benchmarks/TDVRP/Vu2020/n=99/Vu-A2-pB-d98-w60.bks.Duration.json",
+    "cache": "outputs/inputs/b0391d557245b6bfacd25e476027b5ecf57ee99a4b9368edbe8729225de15303.json",
+    "status": "ready",
+    "sha256": "da27085d3d8742322d55e6545af86003f8af6fb63684e25484b85a4fc0d35398",
+    "materialize_seconds": 4.160532048990717
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Ari2018/n=15/Ari-A7-pA-d70-w0.bks.Duration.json",
+    "cache": "outputs/inputs/64f252572d146003a99fb639d3c37dba8591ace0bcd9c0daa53fa1c6c9dbce13.json",
+    "status": "ready",
+    "sha256": "01a06f8921f66a9ccc6f6315fd150fd5ab69a27f314e329bca28f4ede7a6576e",
+    "materialize_seconds": 0.11197203499614261
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Ari2018/n=20/Ari-C3-pB-d80-w25.bks.Duration.json",
+    "cache": "outputs/inputs/cb6eb280dcfaba093e1a07f0fc1109209eec9c8ee327e04305140ec25016f363.json",
+    "status": "ready",
+    "sha256": "2a70a37e6b9ee031026e8585f15d7c336a2a574456566c7421383f8d80be9dbf",
+    "materialize_seconds": 0.19127168800332583
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Ari2018/n=30/Ari-C5-pA-d98-w100.bks.Duration.json",
+    "cache": "outputs/inputs/b5a3947ca698362fc615b509e96a988d63731e30ab78bddb9171a2e199c60023.json",
+    "status": "ready",
+    "sha256": "758bece2bc802f0278bd1541d2fd2b4422ca43f777d44d04666508144ba2b185",
+    "materialize_seconds": 0.4379304510075599
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Ari2018/n=40/Ari-C10-pB-d95-w50.bks.Duration.json",
+    "cache": "outputs/inputs/8afa4f148344b9890dc58c70328fe2aba993fc4853d0bd7fa18391a878d9ad61.json",
+    "status": "ready",
+    "sha256": "c4e279a2243bafe8a4079c509068044b4c0e02a5186a8daab3528e812db4a736",
+    "materialize_seconds": 0.8593278710031882
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Blauth2024/n=10/Blauth-nairobi.bks.FleetCostDuration.json",
+    "cache": "outputs/inputs/b63d9f3b327372e257b1538b69524e9b353961d6abc7e4a96a1837710f6fac28.json",
+    "status": "ready",
+    "sha256": "6dfe07a0bad7462dac5570b6adbb2872cbed4d3a8bafe4ca3eed56168a76985a",
+    "materialize_seconds": 0.016478494013426825
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Rifki2020/n=10/Rifki-12.bks.Duration.json",
+    "cache": "outputs/inputs/35b5abca74267341ead5973f8d1eb4036855e15711075105a897224b6cc6c7be.json",
+    "status": "ready",
+    "sha256": "da8d4addb8671f0e3584e2ca637725623de4a4da0c3d312633f918638d8edfe0",
+    "materialize_seconds": 0.03708401901531033
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Rifki2020/n=20/Rifki-13.bks.Duration.json",
+    "cache": "outputs/inputs/07abf41b8f0a4fd535d971a1a800e86853540da6323e7a442778882131fce0f7.json",
+    "status": "ready",
+    "sha256": "bc10f3b6a1bbdf56cac1c98da2c59ffcfed3b4a85fdbde16379792fc4be0b4ef",
+    "materialize_seconds": 0.09594947600271553
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Rifki2020/n=30/Rifki-25.bks.Duration.json",
+    "cache": "outputs/inputs/715d09ebc47d24d464ce0b09c668a4072e62678e4f269095697b245726882a62.json",
+    "status": "ready",
+    "sha256": "8af4c3b4f5ebbad695f8455b9dfdc41a51edd0d1af6a24b7f24075aa8d02971f",
+    "materialize_seconds": 0.1805340170103591
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Rifki2020/n=40/Rifki-30.bks.Duration.json",
+    "cache": "outputs/inputs/3f837329e9587bf37815d918c2120aea849e1d1d19e4b137f2df1c7de63978bb.json",
+    "status": "ready",
+    "sha256": "f9cb0ce7dd78675e0d4bd7b2306fecde1168b06d7e2159910f8c66e38268a28e",
+    "materialize_seconds": 0.2683940450078808
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Rifki2020/n=50/Rifki-14.bks.Duration.json",
+    "cache": "outputs/inputs/3066fee3402e1c2dbed74b0d28b6dd4800acf75cc0e05b5bf722e311e4500f60.json",
+    "status": "ready",
+    "sha256": "f4492b5eaba1fbadfc36ad521b44b43c4a06222c0e99222cf3555e8312b89837",
+    "materialize_seconds": 0.43276575699565
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Rifki2020/n=60/Rifki-21.bks.Duration.json",
+    "cache": "outputs/inputs/63bce6dfcae35d374ea253d4afaa61ca0c4eb125b4c311c3f4ddf43d3e9408c1.json",
+    "status": "ready",
+    "sha256": "774c77b01c1989c0d44bb806524bb286b6699dbd3ec3f4c84b6eb910e9786a2f",
+    "materialize_seconds": 0.7699032629898284
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Vu2020/n=59/Vu-A1-pA-d98-w40.bks.Duration.json",
+    "cache": "outputs/inputs/a042faa2430660cbc6b137b5e5debccceb5be2c6a4097ab5e2e612d8d35b13a0.json",
+    "status": "ready",
+    "sha256": "39c8c55562e25b2bb24465665e8837dec0132169be11a557917a9a41cc0271ce",
+    "materialize_seconds": 1.4403174719773233
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Vu2020/n=79/Vu-A2-pB-d98-w60.bks.Duration.json",
+    "cache": "outputs/inputs/25972c150d011329960ea0bf5b663800b7d9aaf8b92d78d0bb308a873d1cf16e.json",
+    "status": "ready",
+    "sha256": "93eeb0e10084a9d1033ec0b4bff4bad0579b75d2a8d86823bacfe94f1104ba53",
+    "materialize_seconds": 2.6251264969760086
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Vu2020/n=99/Vu-A5-pB-d90-w180.bks.Duration.json",
+    "cache": "outputs/inputs/e02fde4828b86e1394b1e5ab8fd206810067ca2edb12a64aaa3c381334f0eecb.json",
+    "status": "ready",
+    "sha256": "ab270584dcf9691d926676787d2cee56627001d3d47b269ab52aa3b911563b23",
+    "materialize_seconds": 4.032313812000211
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "path": "fixtures/lera-original-solutions.json",
+  "sha256": "52580363b06b7db265d956a23903a2fb6f1c80b86d1579b996592411f87f4641",
+  "repository_commit": "35f1e3bceab016ee7c4b74282798a22a558a12a8",
+  "num_solutions": 146,
+  "matches_repository_bytes": true,
+  "repository": "https://github.com/0nyr/TDVRPTW-solver"
+}

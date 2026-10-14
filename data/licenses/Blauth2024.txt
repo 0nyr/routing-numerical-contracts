@@ -1,0 +1,34 @@
+SPDX-License-Identifier: CC-BY-NC-4.0
+
+The Blauth2024 benchmark instances, arrival-time-function sidecars and
+best-known-solution files in this repository are provided under the Creative
+Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0):
+
+https://creativecommons.org/licenses/by-nc/4.0/
+
+They are a value-exact conversion of the delivery-only instances of the
+vrptdt-benchmark published by Blauth et al., which is distributed under the
+same license because it incorporates Uber Movement speed data. Any use of this
+data must be NON-COMMERCIAL and must attribute the original authors.
+
+Attribution
+-----------
+
+- Paper: Jannis Blauth, Stephan Held, Dirk Müller, Niklas Schlomberg,
+  Vera Traub, Thorben Tröbst, Jens Vygen. "Vehicle routing with
+  time-dependent travel times: Theory, practice, and benchmarks."
+  Discrete Optimization 53 (2024), 100848.
+  https://doi.org/10.1016/j.disopt.2024.100848
+- Upstream repository: https://gitlab.com/muelleratorunibonnde/vrptdt-benchmark
+- Archived dataset: bonndata, DOI 10.60507/FK2/X22BKR
+  https://doi.org/10.60507/FK2/X22BKR
+- Road networks: (c) OpenStreetMap contributors, Open Database License (ODbL),
+  https://www.openstreetmap.org/copyright
+- Speed data: Uber Movement, CC BY-NC 3.0 (the service was discontinued in
+  2023; the published travel-time matrices are the surviving artifact).
+
+MAMUT-routing conversion metadata, best-known-solution records and any other
+derived benchmark artifacts in this repository are distributed under the same
+CC BY-NC 4.0 notice unless an individual file states otherwise. The MIT
+license of the MAMUT-routing superproject applies to MAMUT-routing source
+code, not to the benchmark data files in this repository.

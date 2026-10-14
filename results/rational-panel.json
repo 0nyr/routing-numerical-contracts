@@ -1,0 +1,212 @@
+[
+  {
+    "id": "benchmarks/Poryos2026/TDVRP/hong_kong/n=25/poryos-hong_kong-n25-poi/wave-moderate/poryos-hong_kong-n25-poi-wave-moderate.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/1db55320dd9c1a910aba6c5351d5acca3eac3e751d23bf0751c62dca3ad6ad48.json",
+    "status": "complete",
+    "sha256": "ac29cd140b7d212a15540ae66a993f735870b58f7079921afd89e3d84e5de858"
+  },
+  {
+    "id": "benchmarks/Poryos2026/TDVRP/lyon/n=50/poryos-lyon-n50-hyb/wave-moderate/poryos-lyon-n50-hyb-wave-moderate.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/61b291fd330140ea325b03358fa99378e965f85f0f9ee0abdb0508b3410cb4b7.json",
+    "status": "complete",
+    "sha256": "3e9ed5a05fdb7b8b51bbc0ebd4f3b51f8408fdb23d94e6df203e2b199a706d23"
+  },
+  {
+    "id": "benchmarks/Poryos2026/TDVRP/san_francisco/n=100/poryos-san_francisco-n100-hyb/bpr-heavy/poryos-san_francisco-n100-hyb-bpr-heavy.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/a88a32a7d929397936748b536722f989c8a389c26cfb4777e2f47d7b435d00f1.json",
+    "status": "complete",
+    "sha256": "ada0d43dcc01de188f02d70466ea76e4d39a72cf35d5791df109c73a82731806"
+  },
+  {
+    "id": "benchmarks/Poryos2026/TDVRP/tokyo/n=10/poryos-tokyo-n10-poi/wave-light/poryos-tokyo-n10-poi-wave-light.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/9479bca1fbea20877cdc610b3903cb2008090d02ed05abfe430d69ec5211e407.json",
+    "status": "complete",
+    "sha256": "70bc13c9ad4d678288f43b38442a56c31d1665095572371a9f2bc0e1396800f7"
+  },
+  {
+    "id": "benchmarks/Poryos2026/TDVRPTW/lyon/n=50/poryos-lyon-n50-poi/bpr-moderate/poryos-lyon-n50-poi-bpr-moderate.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/a1b790a2f1efba4dbc91f37da2d7fcab4063711a72cca1a6afed95ea5040ebbf.json",
+    "status": "complete",
+    "sha256": "1ed308d3980f3f58b09bcd456396c86f5c5672e2c6b5105816c164c41d42821c"
+  },
+  {
+    "id": "benchmarks/Poryos2026/TDVRPTW/paris/n=10/poryos-paris-n10-poi/wave-light/poryos-paris-n10-poi-wave-light.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/06216b7903704fd2fafcfd7afdd7323514d7e05e8c57028a976fb3c8425dfb7d.json",
+    "status": "complete",
+    "sha256": "988efacec1b88075e2a5a3376b29b7a4a2ab316c6e0a2445f400b7eacc496325"
+  },
+  {
+    "id": "benchmarks/Poryos2026/TDVRPTW/paris/n=25/poryos-paris-n25-poi/bpr-heavy/poryos-paris-n25-poi-bpr-heavy.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/648defeff3d86aaa1aed0bd996ae95c3a516d4a5ce6d47f7791d3e171286f806.json",
+    "status": "complete",
+    "sha256": "693550d22175af3dfb5cf516ff20fff7294e710fc22a467bef56e85dad546a95"
+  },
+  {
+    "id": "benchmarks/Poryos2026/TDVRPTW/san_francisco/n=100/poryos-san_francisco-n100-poi/bpr-moderate/poryos-san_francisco-n100-poi-bpr-moderate.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/463f9c81b56528341168b170df6791fd3452c4455a01ad1c453f6de08dbba5db.json",
+    "status": "complete",
+    "sha256": "9eccf9769c9818eff33c7be4941af6ee063896798217d19dfb33dfcab57c0142"
+  },
+  {
+    "id": "benchmarks/TDVRP/Ari2018/n=15/Ari-C6-pA-d80-w25.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/641e06102cf5bd0325538ccefcbfef45ab68efe94161fab967a0fa023f18c725.json",
+    "status": "complete",
+    "sha256": "f6956b9e0241a3cde9bc739f16b659e897284422bcc344389af6dcf3a5d36ade"
+  },
+  {
+    "id": "benchmarks/TDVRP/Ari2018/n=20/Ari-C10-pA-d80-w100.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/d566c28ffab26a43bbe51419f6b5fa95347d3b39750c17648ddcb9888134ebf3.json",
+    "status": "complete",
+    "sha256": "ab8e90d467e478e6e184c01ab134242565453bace7f27b13b1deab014d91d142"
+  },
+  {
+    "id": "benchmarks/TDVRP/Ari2018/n=30/Ari-B10-pA-d90-w50.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/e12ba7d9417f848770718eb0dfb6c193fde453fae6aaf342555a0d73364b89c0.json",
+    "status": "complete",
+    "sha256": "2410c48cb44a75156e16af3dc5310be31f02bc6752e552a413c4e2915aa71665"
+  },
+  {
+    "id": "benchmarks/TDVRP/Ari2018/n=40/Ari-B10-pA-d95-w100.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/cb2253b2254c099d628cbcf1f06b4b0f518cde963810876879d086c018310da1.json",
+    "status": "complete",
+    "sha256": "4cc6406e10b823a07a686db57b69bf71a1bde655c6d85996268c19efb8a7ce22"
+  },
+  {
+    "id": "benchmarks/TDVRP/Rifki2020/n=10/Rifki-24.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/916797674fb1f0a2dc6ba0108fc4749000d29914fb9873955f2d44b520022117.json",
+    "status": "complete",
+    "sha256": "586ae04aff81d62ffbbf58d224e095a7487776516d1cbe93c98d1b7a37954357"
+  },
+  {
+    "id": "benchmarks/TDVRP/Rifki2020/n=20/Rifki-2.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/128734da3f7f9144165896ee3eade1f393162fd3239ce7b2b0310cb9d81b944d.json",
+    "status": "complete",
+    "sha256": "4698902a49c3899b14bf455b9de2be53952283cdfa7a33511993ca9d8f5e3958"
+  },
+  {
+    "id": "benchmarks/TDVRP/Rifki2020/n=30/Rifki-12.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/596b336c770a0006c2d1b51a9061d6a76c1ef9e0c7976572769e7b63de793edb.json",
+    "status": "complete",
+    "sha256": "5f2ec28f7584b4f472948826c7b70920ea9564aba2c082bb02e36ffc9af62b21"
+  },
+  {
+    "id": "benchmarks/TDVRP/Rifki2020/n=40/Rifki-3.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/4523c66f84f1e48096bb81d23ea6f6c3fd2c5c753887b2e9f0f46f2461e50069.json",
+    "status": "complete",
+    "sha256": "72151106975d0c4276b7684e50241b5e4926705faeadc6869d486c795a12fb75"
+  },
+  {
+    "id": "benchmarks/TDVRP/Rifki2020/n=50/Rifki-20.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/ab922a238845f77c29978a2d0cb01b810a40750c06ce1ba6f544c7b4a84e221e.json",
+    "status": "complete",
+    "sha256": "cddcb7d61159134c4bd0dc0580481e81e63d8b061f7d6fc214440ffb7c3127a4"
+  },
+  {
+    "id": "benchmarks/TDVRP/Rifki2020/n=60/Rifki-3.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/1f1b8fe9517f3584fa023a8b26a12ba706eccf53a32e5c3c2119043a70782ecc.json",
+    "status": "complete",
+    "sha256": "d85640e97fef498dc8d3454bf4daba1342aa02ea3e642aa53a5a7c20a409a79d"
+  },
+  {
+    "id": "benchmarks/TDVRP/Vu2020/n=59/Vu-A2-pB-d98-w60.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/f104b05fc8df34354c761a242acc97df94f409b071fc133af084062daef20310.json",
+    "status": "complete",
+    "sha256": "6442f8e0618a07cc310d5c6a3eef51094959fa81977b3784768de20dda5ec417"
+  },
+  {
+    "id": "benchmarks/TDVRP/Vu2020/n=79/Vu-A3-pA-d80-w60.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/7b382bb3f7f60f422be1e9b9beff74d42b1f77ffda42f6ded8b5abb3ff5ac883.json",
+    "status": "complete",
+    "sha256": "6d5de785c5c121b1b4fb7ed643307e84ab9daecdb72287f747f171d60255250d"
+  },
+  {
+    "id": "benchmarks/TDVRP/Vu2020/n=99/Vu-A2-pB-d98-w60.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/b0391d557245b6bfacd25e476027b5ecf57ee99a4b9368edbe8729225de15303.json",
+    "status": "complete",
+    "sha256": "346070cd8ae89b18e111c128a76f9a9aded3459ff27615e181a1f7844ea54b03"
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Ari2018/n=15/Ari-A7-pA-d70-w0.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/64f252572d146003a99fb639d3c37dba8591ace0bcd9c0daa53fa1c6c9dbce13.json",
+    "status": "complete",
+    "sha256": "9d3e0fec180a75e0d7e337cadbf70c23bf76802c208664b20c28506cb2b7d8e6"
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Ari2018/n=20/Ari-C3-pB-d80-w25.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/cb6eb280dcfaba093e1a07f0fc1109209eec9c8ee327e04305140ec25016f363.json",
+    "status": "complete",
+    "sha256": "2a7ed39f8fd5de08c3fb067650a8e883a17eb9a8dc223cd04808c07a40428949"
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Ari2018/n=30/Ari-C5-pA-d98-w100.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/b5a3947ca698362fc615b509e96a988d63731e30ab78bddb9171a2e199c60023.json",
+    "status": "complete",
+    "sha256": "d2905d99c0a193848f592e71909af14a7e39e1de9070f3756e0e2cc8b6542967"
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Ari2018/n=40/Ari-C10-pB-d95-w50.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/8afa4f148344b9890dc58c70328fe2aba993fc4853d0bd7fa18391a878d9ad61.json",
+    "status": "complete",
+    "sha256": "e40547326e538c46cbc6c339bc919f35c67920c137370ca65268ae2055db3b19"
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Blauth2024/n=10/Blauth-nairobi.bks.FleetCostDuration.json",
+    "result": "outputs/experiments/rational-panel/b63d9f3b327372e257b1538b69524e9b353961d6abc7e4a96a1837710f6fac28.json",
+    "status": "complete",
+    "sha256": "e65bb7e87586575a4f3780f228182f73952914e07246f204f1f21331138aca78"
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Rifki2020/n=10/Rifki-12.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/35b5abca74267341ead5973f8d1eb4036855e15711075105a897224b6cc6c7be.json",
+    "status": "complete",
+    "sha256": "cb8a9e106a021efb92899e283030630ab54ae16d858935713ef8259e063e822f"
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Rifki2020/n=20/Rifki-13.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/07abf41b8f0a4fd535d971a1a800e86853540da6323e7a442778882131fce0f7.json",
+    "status": "complete",
+    "sha256": "eede569034cd953137fe9809888d75bd533ce97b5d2779e7876700012ce3b6ae"
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Rifki2020/n=30/Rifki-25.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/715d09ebc47d24d464ce0b09c668a4072e62678e4f269095697b245726882a62.json",
+    "status": "complete",
+    "sha256": "ed8616c134622cd9a76ba403cedb7d23b745dbecec09f4b50e5860fc5e32e5d3"
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Rifki2020/n=40/Rifki-30.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/3f837329e9587bf37815d918c2120aea849e1d1d19e4b137f2df1c7de63978bb.json",
+    "status": "complete",
+    "sha256": "d3667630d4a6b6c4b080272039a2a40a242384ef10c8cdae47720f152cb7e767"
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Rifki2020/n=50/Rifki-14.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/3066fee3402e1c2dbed74b0d28b6dd4800acf75cc0e05b5bf722e311e4500f60.json",
+    "status": "complete",
+    "sha256": "67137e9a6c3054164cdccb5e59b37181a1ccc4450e02a62825267cfc45a8877d"
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Rifki2020/n=60/Rifki-21.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/63bce6dfcae35d374ea253d4afaa61ca0c4eb125b4c311c3f4ddf43d3e9408c1.json",
+    "status": "complete",
+    "sha256": "4f103750f5bd6ef5bd40e68cc3b80538b05c2bb1137d6ee2948d5780710c5b87"
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Vu2020/n=59/Vu-A1-pA-d98-w40.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/a042faa2430660cbc6b137b5e5debccceb5be2c6a4097ab5e2e612d8d35b13a0.json",
+    "status": "complete",
+    "sha256": "a8c8afaf253a675ae395e793eb773761b43bf8337acb9ff11b5d143ec366ae2a"
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Vu2020/n=79/Vu-A2-pB-d98-w60.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/25972c150d011329960ea0bf5b663800b7d9aaf8b92d78d0bb308a873d1cf16e.json",
+    "status": "complete",
+    "sha256": "37a6dac87c6271013e44731d6a2017cbdb7f475f49930b5e8224a0113a9866d1"
+  },
+  {
+    "id": "benchmarks/TDVRPTW/Vu2020/n=99/Vu-A5-pB-d90-w180.bks.Duration.json",
+    "result": "outputs/experiments/rational-panel/e02fde4828b86e1394b1e5ab8fd206810067ca2edb12a64aaa3c381334f0eecb.json",
+    "status": "complete",
+    "sha256": "78fe41f555a61e17f95058260f387c7078fe5b37a481e38727e1b41c745c178b"
+  }
+]

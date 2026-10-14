@@ -1,0 +1,13 @@
+{
+  "xs": [
+    0.0,
+    1.0
+  ],
+  "ys": [
+    5.551115123125783e-17,
+    1.0
+  ],
+  "float_rise_equals_run": true,
+  "exact_rise_equals_run": false,
+  "exact_slope": "18014398509481983/18014398509481984"
+}

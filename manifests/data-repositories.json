@@ -1,0 +1,62 @@
+[
+  {
+    "path": ".",
+    "baseline": "93d9cc4cf440f8881630f4a3d21033b30aaa6d41",
+    "head": "0d48b4f383c4336af7de8a2f2cac0e8502da6c83"
+  },
+  {
+    "path": "benchmarks/Mamut2026",
+    "baseline": "0683e61b17c89f1376f1078eef64fe0abf5dfccb",
+    "head": "28a69fe0f0563f4038039fc67c9fac687f823c65"
+  },
+  {
+    "path": "benchmarks/Poryos2026",
+    "baseline": "ea172ebd5f8d2ace0a57f2dbefd7e21ae33c9bb6",
+    "head": "9fe84e22763781418b234725d62a3178f02a4f39"
+  },
+  {
+    "path": "benchmarks/TDVRP/Ari2018",
+    "baseline": "fef2a2269f79bde2c51a71cf0ad015afbd1b2c12",
+    "head": "fe8f3d0c268e53d0ad37e8bdfb3768808b185b48"
+  },
+  {
+    "path": "benchmarks/TDVRP/Lera2026",
+    "baseline": "bafb44620ce5d4a105eeb1a8714ae63490820ea6",
+    "head": "bb783c286d8db17cfd1d164b3f35285f201ef921"
+  },
+  {
+    "path": "benchmarks/TDVRP/Rifki2020",
+    "baseline": "c0326bfc2f6d8ee303b8b4bca946371839923765",
+    "head": "a5712d7a293f8453fb9ac1a01e853da516f090bb"
+  },
+  {
+    "path": "benchmarks/TDVRP/Vu2020",
+    "baseline": "e304cc327cc94427258db3e0d663b808cb10eda2",
+    "head": "8bb7516806ddd11705730987146840064aa8cb37"
+  },
+  {
+    "path": "benchmarks/TDVRPTW/Ari2018",
+    "baseline": "8add5a915f5826e8ea85d732b513c1ae02225ef1",
+    "head": "393746ad32376d62912d71ac60cfdc576d96acf1"
+  },
+  {
+    "path": "benchmarks/TDVRPTW/Blauth2024",
+    "baseline": "7723ad858aac2d8488e4331996a106d0569ca52c",
+    "head": "b9b48a229cb0a8b26580522b610a365e6ac7534e"
+  },
+  {
+    "path": "benchmarks/TDVRPTW/Lera2026",
+    "baseline": "272f66d77e8931da2a975734ccddff6b7494e43f",
+    "head": "65667ed1d2f6121ec0f42de89416f7d63dbaef5e"
+  },
+  {
+    "path": "benchmarks/TDVRPTW/Rifki2020",
+    "baseline": "63173c073c3753aa90f0f901b3e01826d70886c3",
+    "head": "a1a04cf52e951f8b3537e2c5dbd343a12be976f4"
+  },
+  {
+    "path": "benchmarks/TDVRPTW/Vu2020",
+    "baseline": "356320b597e55f0156a8bfb560a52c2b90e908c7",
+    "head": "1e9bef436dc4eac13a343d3fe3ab11372c7d35bb"
+  }
+]

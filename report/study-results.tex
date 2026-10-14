@@ -1,0 +1,22 @@
+The additional accessible static history provides 2,273 distinct ordered candidates on 1,956 instances, with 317 candidate pairs. Both policies agree on all 286 strict decimal improvements. The remaining 31 pairs are decimal ties distinguished by historical submitted-order scoring, with maximum gap $8.15e-10$. Canonical binary64 scoring distinguishes 15 of these pairs. There are no strict ranking reversals in this accessible history. We exclude the unavailable third Mamut2026 campaign rather than infer its outcome.
+
+We measure preloaded route folds and complete released checkers separately, using 7 timing rounds with alternating release order on one Linux x86-64 host under CPython 3.13.13. Setup is outside the checker timing and is recorded separately. Table~\ref{tab:controlled-td} reports panel medians and paired time ratios. The newer release is faster in these measurements, so efficiency does not support calling the historical TD implementation faster. Its restoration is instead motivated by contract continuity and the simpler shared composition protocol.
+
+\begin{table}[htbp]
+\centering
+\caption{Controlled Python measurements. Times are medians in milliseconds, first within each record's repeated measurements and then across records. Ratios are medians of paired 0.12/0.11 times, rather than ratios of the displayed panel medians. Setup, file loading and process startup are excluded.}\label{tab:controlled-td}
+\begin{tabular}{lrrrr}
+\toprule
+Panel and evaluation & Records & 0.11 (ms) & 0.12 (ms) & Paired ratio\\
+\midrule
+Original route folds & 898 & 0.103 & 0.068 & 0.668 \\
+Original full checkers & 146 & 0.554 & 0.414 & 0.733 \\
+Broader route folds & 243 & 0.823 & 0.607 & 0.698 \\
+Broader full checkers & 35 & 8.270 & 5.731 & 0.705 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The static timing panel contains 25 records selected at fixed size positions within each family. Forming and comparing two exact-decimal objectives takes a median 152.5 times the corresponding sequential binary64 reduction and comparison. This includes the released decimal-conversion primitive and rational additions, not the full store's validation or filesystem work. It is not a solver speed-up estimate. Appendix~\ref{app:controlled} gives the protocol, dispersion and per-record reduction timings. Accurate summation and integer scaling are measured separately, with their distinct input and output semantics.
+
+The bounded rational timing panel selects 24 routes of at most 25 customers, 12 from each TD panel, by a fixed hash rule. Both input interpretations complete on 24 selected routes. On these matched routes, the median binary-rational-reference/historical-fold time ratio is 315.2. This comparison measures our independent partitioning reference, including stage construction, against the preloaded composition kernel. The difference includes algorithmic structure and arithmetic costs. It cannot isolate a universal rational-arithmetic penalty or predict an optimized exact solver.

@@ -1,0 +1,17 @@
+{
+  "inspection_date": "2026-10-14",
+  "library_source_change": false,
+  "tools_source_change": false,
+  "main_head": "6419553b215f515d3ac5c311e5996ad152beaa32",
+  "main_changed_paths": [
+    "benchmarks/Mamut2026"
+  ],
+  "pinned_mamut2026": "c62eca8b02282469b665dbf8fe9b7566ca3435a7",
+  "accessible_mamut2026_head": "4715692eefaae3ed554fbb24597227b0c5025853",
+  "campaign3_status": "excluded: Git upload-pack reports not our ref for pinned satellite commit; no accessible campaign artifacts",
+  "historical_td_commits": [
+    "5d8d1ad",
+    "3702a30",
+    "fede17f"
+  ]
+}

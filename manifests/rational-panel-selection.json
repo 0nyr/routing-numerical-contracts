@@ -1,0 +1,251 @@
+{
+  "seed": 20260930,
+  "rule": "minimum SHA256(seed:relative-path) per family/problem/customer-count stratum, at most 100 customers, excludes fully evaluated original Dabia2013 panel",
+  "strata": [
+    {
+      "family": "Ari2018",
+      "problem": "TDVRP",
+      "size": 15,
+      "eligible": 40,
+      "selected": "benchmarks/TDVRP/Ari2018/n=15/Ari-C6-pA-d80-w25.bks.Duration.json"
+    },
+    {
+      "family": "Ari2018",
+      "problem": "TDVRP",
+      "size": 20,
+      "eligible": 40,
+      "selected": "benchmarks/TDVRP/Ari2018/n=20/Ari-C10-pA-d80-w100.bks.Duration.json"
+    },
+    {
+      "family": "Ari2018",
+      "problem": "TDVRP",
+      "size": 30,
+      "eligible": 40,
+      "selected": "benchmarks/TDVRP/Ari2018/n=30/Ari-B10-pA-d90-w50.bks.Duration.json"
+    },
+    {
+      "family": "Ari2018",
+      "problem": "TDVRP",
+      "size": 40,
+      "eligible": 40,
+      "selected": "benchmarks/TDVRP/Ari2018/n=40/Ari-B10-pA-d95-w100.bks.Duration.json"
+    },
+    {
+      "family": "Ari2018",
+      "problem": "TDVRPTW",
+      "size": 15,
+      "eligible": 40,
+      "selected": "benchmarks/TDVRPTW/Ari2018/n=15/Ari-A7-pA-d70-w0.bks.Duration.json"
+    },
+    {
+      "family": "Ari2018",
+      "problem": "TDVRPTW",
+      "size": 20,
+      "eligible": 40,
+      "selected": "benchmarks/TDVRPTW/Ari2018/n=20/Ari-C3-pB-d80-w25.bks.Duration.json"
+    },
+    {
+      "family": "Ari2018",
+      "problem": "TDVRPTW",
+      "size": 30,
+      "eligible": 40,
+      "selected": "benchmarks/TDVRPTW/Ari2018/n=30/Ari-C5-pA-d98-w100.bks.Duration.json"
+    },
+    {
+      "family": "Ari2018",
+      "problem": "TDVRPTW",
+      "size": 40,
+      "eligible": 40,
+      "selected": "benchmarks/TDVRPTW/Ari2018/n=40/Ari-C10-pB-d95-w50.bks.Duration.json"
+    },
+    {
+      "family": "Blauth2024",
+      "problem": "TDVRPTW",
+      "size": 10,
+      "eligible": 10,
+      "selected": "benchmarks/TDVRPTW/Blauth2024/n=10/Blauth-nairobi.bks.FleetCostDuration.json"
+    },
+    {
+      "family": "Poryos2026",
+      "problem": "TDVRP",
+      "size": 10,
+      "eligible": 60,
+      "selected": "benchmarks/Poryos2026/TDVRP/tokyo/n=10/poryos-tokyo-n10-poi/wave-light/poryos-tokyo-n10-poi-wave-light.bks.Duration.json"
+    },
+    {
+      "family": "Poryos2026",
+      "problem": "TDVRP",
+      "size": 25,
+      "eligible": 60,
+      "selected": "benchmarks/Poryos2026/TDVRP/hong_kong/n=25/poryos-hong_kong-n25-poi/wave-moderate/poryos-hong_kong-n25-poi-wave-moderate.bks.Duration.json"
+    },
+    {
+      "family": "Poryos2026",
+      "problem": "TDVRP",
+      "size": 50,
+      "eligible": 60,
+      "selected": "benchmarks/Poryos2026/TDVRP/lyon/n=50/poryos-lyon-n50-hyb/wave-moderate/poryos-lyon-n50-hyb-wave-moderate.bks.Duration.json"
+    },
+    {
+      "family": "Poryos2026",
+      "problem": "TDVRP",
+      "size": 100,
+      "eligible": 60,
+      "selected": "benchmarks/Poryos2026/TDVRP/san_francisco/n=100/poryos-san_francisco-n100-hyb/bpr-heavy/poryos-san_francisco-n100-hyb-bpr-heavy.bks.Duration.json"
+    },
+    {
+      "family": "Poryos2026",
+      "problem": "TDVRPTW",
+      "size": 10,
+      "eligible": 60,
+      "selected": "benchmarks/Poryos2026/TDVRPTW/paris/n=10/poryos-paris-n10-poi/wave-light/poryos-paris-n10-poi-wave-light.bks.Duration.json"
+    },
+    {
+      "family": "Poryos2026",
+      "problem": "TDVRPTW",
+      "size": 25,
+      "eligible": 60,
+      "selected": "benchmarks/Poryos2026/TDVRPTW/paris/n=25/poryos-paris-n25-poi/bpr-heavy/poryos-paris-n25-poi-bpr-heavy.bks.Duration.json"
+    },
+    {
+      "family": "Poryos2026",
+      "problem": "TDVRPTW",
+      "size": 50,
+      "eligible": 60,
+      "selected": "benchmarks/Poryos2026/TDVRPTW/lyon/n=50/poryos-lyon-n50-poi/bpr-moderate/poryos-lyon-n50-poi-bpr-moderate.bks.Duration.json"
+    },
+    {
+      "family": "Poryos2026",
+      "problem": "TDVRPTW",
+      "size": 100,
+      "eligible": 60,
+      "selected": "benchmarks/Poryos2026/TDVRPTW/san_francisco/n=100/poryos-san_francisco-n100-poi/bpr-moderate/poryos-san_francisco-n100-poi-bpr-moderate.bks.Duration.json"
+    },
+    {
+      "family": "Rifki2020",
+      "problem": "TDVRP",
+      "size": 10,
+      "eligible": 30,
+      "selected": "benchmarks/TDVRP/Rifki2020/n=10/Rifki-24.bks.Duration.json"
+    },
+    {
+      "family": "Rifki2020",
+      "problem": "TDVRP",
+      "size": 20,
+      "eligible": 30,
+      "selected": "benchmarks/TDVRP/Rifki2020/n=20/Rifki-2.bks.Duration.json"
+    },
+    {
+      "family": "Rifki2020",
+      "problem": "TDVRP",
+      "size": 30,
+      "eligible": 30,
+      "selected": "benchmarks/TDVRP/Rifki2020/n=30/Rifki-12.bks.Duration.json"
+    },
+    {
+      "family": "Rifki2020",
+      "problem": "TDVRP",
+      "size": 40,
+      "eligible": 30,
+      "selected": "benchmarks/TDVRP/Rifki2020/n=40/Rifki-3.bks.Duration.json"
+    },
+    {
+      "family": "Rifki2020",
+      "problem": "TDVRP",
+      "size": 50,
+      "eligible": 30,
+      "selected": "benchmarks/TDVRP/Rifki2020/n=50/Rifki-20.bks.Duration.json"
+    },
+    {
+      "family": "Rifki2020",
+      "problem": "TDVRP",
+      "size": 60,
+      "eligible": 30,
+      "selected": "benchmarks/TDVRP/Rifki2020/n=60/Rifki-3.bks.Duration.json"
+    },
+    {
+      "family": "Rifki2020",
+      "problem": "TDVRPTW",
+      "size": 10,
+      "eligible": 30,
+      "selected": "benchmarks/TDVRPTW/Rifki2020/n=10/Rifki-12.bks.Duration.json"
+    },
+    {
+      "family": "Rifki2020",
+      "problem": "TDVRPTW",
+      "size": 20,
+      "eligible": 30,
+      "selected": "benchmarks/TDVRPTW/Rifki2020/n=20/Rifki-13.bks.Duration.json"
+    },
+    {
+      "family": "Rifki2020",
+      "problem": "TDVRPTW",
+      "size": 30,
+      "eligible": 30,
+      "selected": "benchmarks/TDVRPTW/Rifki2020/n=30/Rifki-25.bks.Duration.json"
+    },
+    {
+      "family": "Rifki2020",
+      "problem": "TDVRPTW",
+      "size": 40,
+      "eligible": 30,
+      "selected": "benchmarks/TDVRPTW/Rifki2020/n=40/Rifki-30.bks.Duration.json"
+    },
+    {
+      "family": "Rifki2020",
+      "problem": "TDVRPTW",
+      "size": 50,
+      "eligible": 30,
+      "selected": "benchmarks/TDVRPTW/Rifki2020/n=50/Rifki-14.bks.Duration.json"
+    },
+    {
+      "family": "Rifki2020",
+      "problem": "TDVRPTW",
+      "size": 60,
+      "eligible": 30,
+      "selected": "benchmarks/TDVRPTW/Rifki2020/n=60/Rifki-21.bks.Duration.json"
+    },
+    {
+      "family": "Vu2020",
+      "problem": "TDVRP",
+      "size": 59,
+      "eligible": 56,
+      "selected": "benchmarks/TDVRP/Vu2020/n=59/Vu-A2-pB-d98-w60.bks.Duration.json"
+    },
+    {
+      "family": "Vu2020",
+      "problem": "TDVRP",
+      "size": 79,
+      "eligible": 56,
+      "selected": "benchmarks/TDVRP/Vu2020/n=79/Vu-A3-pA-d80-w60.bks.Duration.json"
+    },
+    {
+      "family": "Vu2020",
+      "problem": "TDVRP",
+      "size": 99,
+      "eligible": 56,
+      "selected": "benchmarks/TDVRP/Vu2020/n=99/Vu-A2-pB-d98-w60.bks.Duration.json"
+    },
+    {
+      "family": "Vu2020",
+      "problem": "TDVRPTW",
+      "size": 59,
+      "eligible": 56,
+      "selected": "benchmarks/TDVRPTW/Vu2020/n=59/Vu-A1-pA-d98-w40.bks.Duration.json"
+    },
+    {
+      "family": "Vu2020",
+      "problem": "TDVRPTW",
+      "size": 79,
+      "eligible": 56,
+      "selected": "benchmarks/TDVRPTW/Vu2020/n=79/Vu-A2-pB-d98-w60.bks.Duration.json"
+    },
+    {
+      "family": "Vu2020",
+      "problem": "TDVRPTW",
+      "size": 99,
+      "eligible": 56,
+      "selected": "benchmarks/TDVRPTW/Vu2020/n=99/Vu-A5-pB-d90-w180.bks.Duration.json"
+    }
+  ]
+}

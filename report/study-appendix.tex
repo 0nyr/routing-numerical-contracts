@@ -1,0 +1,103 @@
+\section{Historical static candidates and controlled measurements}\label{app:controlled}
+
+This appendix records the additional comparison protocol and detailed measurements. Candidate history is read at the original frozen repository pins. A candidate is retained only if the instance bytes equal those of the corresponding frozen record and its routes pass the released structural and temporal checker. Repeated serialized route lists are counted once per instance. Historical declared values are not imposed on the new diagnostic score. The comparisons preserve each objective's fleet tier. Consumed arc operands, serialized routes, original declared costs, BKS byte hashes and source revisions are archived in \path{data/static-history.json.gz}.
+
+The timing experiment runs serially, with no parallel experiment workers. It warms each operation, calibrates a repeated batch, disables garbage collection inside that batch and retains 7 round measurements. Release order alternates for TD and method order uses a fixed per-round shuffle for static reductions. A preloaded fold is first checked against its ordinary harness output. Complete checkers run in separate interpreters with model/ATF construction outside the measured call, and their feasibility, route durations, departures and solution totals are compared with frozen results. The benchmark records the interpreter, platform, clock and CPU affinity. These repeated measurements are descriptive on one host, not confidence intervals for a machine population.
+
+Static selection takes the first, quarter, middle, three-quarter and last size-sorted record in each family, with path order breaking size ties. Reduction kernels use consumed arc vectors. Rational kernel inputs are converted outside the timed sum, while conversion-inclusive methods use the released exact decimal primitive or Python's binary Fraction conversion. The ranking comparison forms both objectives and preserves the fleet tier. Integer methods are eligible only when every scaled operand and the complete nonnegative total are integral and fit signed 64-bit range. Their timing uses Python arbitrary-size integers with conversion excluded, not a native signed-64-bit implementation. The 3 declared scales are 1, 1000 and 1000000.
+
+Rational TD timing selects 12 routes per panel with at most 25 customers, using the minimum SHA-256 ordering of instance identifier, route index and the fixed seed string. Each input interpretation is evaluated 3 times with a 10-second per-call limit. Resource-limited cases remain explicit. Completed optima are checked against the archived exact reference before accepting the timing comparison. Stage construction is included here, and the normal garbage-collection policy is retained for these direct calls. Unlike the calibrated reduction/checker batches, this bounded experiment includes each of its 3 calls without an additional warm-up. It is separate from the full exact-fidelity panel.
+
+\begingroup
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{llrrrrrr}
+\caption{Static timing panel. Medians in microseconds. Integer column uses scale 1000 where eligible. Decimal sum excludes operand conversion. Ranking ratio includes conversion and reduction of both candidates. A dash denotes ineligibility.}\\
+\toprule
+Family & Record & Arcs & Flat & \texttt{fsum} & Integer & Decimal & Rank ratio\\
+\midrule
+\endfirsthead
+\toprule
+Family & Record & Arcs & Flat & \texttt{fsum} & Integer & Decimal & Rank ratio\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Mamut2026 & toronto/100 & 108 & 1.65 & 0.97 & 2.46 & 60.49 & 191.8 \\
+Mamut2026 & arles/179 & 190 & 2.92 & 1.75 & 4.43 & 108.23 & 200.7 \\
+Mamut2026 & pau/327 & 374 & 5.43 & 3.04 & 8.14 & 210.62 & 207.4 \\
+Mamut2026 & rennes/599 & 714 & 10.79 & 6.18 & 15.48 & 408.77 & 212.6 \\
+Mamut2026 & singapore/4000 & 4498 & 64.59 & 55.77 & 110.76 & 2807.36 & 239.5 \\
+Poryos2026 & hong\_kong/10 & 13 & 0.28 & 0.18 & 0.35 & 7.28 & 111.9 \\
+Poryos2026 & hong\_kong/25 & 29 & 0.51 & 0.30 & 0.71 & 16.60 & 148.2 \\
+Poryos2026 & hong\_kong/100 & 109 & 1.76 & 0.96 & 2.49 & 62.76 & 193.0 \\
+Poryos2026 & hong\_kong/500 & 543 & 8.11 & 4.58 & 11.86 & 305.68 & 212.6 \\
+Poryos2026 & tokyo/1000 & 1079 & 16.52 & 9.98 & 24.11 & 619.36 & 212.7 \\
+Dimacs2021 & C101 & 28 & 0.66 & 0.29 & 0.69 & 11.75 & 46.1 \\
+Dimacs2021 & C106 & 110 & 2.53 & 1.00 & 2.55 & 46.37 & 52.5 \\
+Dimacs2021 & C1\_4\_6 & 440 & 10.21 & 3.65 & 9.63 & 184.58 & 51.8 \\
+Dimacs2021 & C1\_8\_3 & 873 & 20.40 & 7.39 & 19.50 & 374.10 & 53.5 \\
+Dimacs2021 & RC2\_10\_9 & 1021 & 26.27 & 8.72 & 22.68 & 430.41 & 49.3 \\
+Ortec2022 & cc05bba4/200 & 211 & 5.18 & 1.73 & 4.70 & 91.08 & 48.9 \\
+Ortec2022 & bdfcbd22/247 & 258 & 6.59 & 1.98 & 5.87 & 112.11 & 48.3 \\
+Ortec2022 & addee14a/302 & 318 & 8.89 & 2.73 & 7.57 & 155.04 & 49.6 \\
+Ortec2022 & df8f2eda/359 & 379 & 10.87 & 3.19 & 9.24 & 182.87 & 49.0 \\
+Ortec2022 & dd43a785/880 & 919 & 26.47 & 8.98 & 21.85 & 430.50 & 48.2 \\
+Sintef2008 & C101 & 28 & 0.57 & 0.31 & -- & 21.83 & 152.5 \\
+Sintef2008 & C106 & 110 & 1.92 & 0.93 & -- & 82.88 & 203.1 \\
+Sintef2008 & C1\_4\_6 & 440 & 7.35 & 3.71 & -- & 425.39 & 251.5 \\
+Sintef2008 & C1\_8\_3 & 872 & 14.50 & 7.46 & -- & 852.68 & 265.9 \\
+Sintef2008 & RC2\_10\_9 & 1018 & 17.33 & 9.23 & -- & 1031.18 & 264.0 \\
+\end{longtable}
+\endgroup
+
+The full identifiers, every method's raw batches and median timings are available in \path{results/controlled-static.json}. The timing column labels describe different finite computations, so a faster method is not automatically a conforming replacement. The native \texttt{fsum} routine and the Python loops also differ in implementation language.
+
+For the original TD route panel, the paired 0.12/0.11 ratio has quartiles 0.644, 0.668 and 0.689. These describe route-to-route variation. Raw repeated samples and complete-checker setup fields remain in \path{results/controlled-td.json}.
+
+For the broader TD route panel, the paired 0.12/0.11 ratio has quartiles 0.649, 0.698 and 0.719. These describe route-to-route variation. Raw repeated samples and complete-checker setup fields remain in \path{results/controlled-td.json}.
+
+\begin{longtable}{llrrr}
+\caption{All 31 historical pairs on which submitted-order scoring distinguishes a decimal tie. Gaps are current minus preceding candidate. Canonical gaps isolate the retained storage-order convention.}\\
+\toprule
+City & Metric & Customers & Submitted gap & Canonical gap\\
+\midrule
+\endfirsthead
+\toprule
+City & Metric & Customers & Submitted gap & Canonical gap\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+arles & euclidean & 179 & 3.49e-10 & 5.82e-11 \\
+athens & euclidean & 105 & 1.46e-10 & 2.91e-11 \\
+barcelona & euclidean & 107 & 5.82e-11 & 0 \\
+berlin & euclidean & 145 & 1.16e-10 & -2.33e-10 \\
+caen & euclidean & 192 & 4.66e-10 & -1.16e-10 \\
+clermont\_ferrand & euclidean & 129 & 2.33e-10 & 1.75e-10 \\
+limoges & euclidean & 152 & 2.91e-11 & -2.91e-11 \\
+new\_york & euclidean & 142 & 8.15e-10 & 3.49e-10 \\
+paris & euclidean & 171 & 2.91e-11 & 2.91e-11 \\
+perpignan & euclidean & 132 & 5.82e-11 & 1.16e-10 \\
+reykjavik & euclidean & 138 & 8.73e-11 & 5.82e-11 \\
+sydney & euclidean & 118 & 2.33e-10 & 0 \\
+toronto & euclidean & 100 & 3.49e-10 & -1.16e-10 \\
+caen & fastest & 192 & 2.91e-11 & 3.64e-12 \\
+manila & fastest & 221 & 5.09e-11 & 0 \\
+montreal & fastest & 112 & 7.28e-12 & 0 \\
+new\_york & fastest & 142 & 7.28e-12 & 0 \\
+reykjavik & fastest & 138 & 1.46e-11 & 0 \\
+saint\_malo & fastest & 260 & 1.82e-11 & 7.28e-12 \\
+sydney & fastest & 118 & 3.64e-11 & 0 \\
+toulon & fastest & 196 & 2.91e-11 & 3.64e-12 \\
+athens & shortest & 105 & 4.07e-10 & 0 \\
+berlin & shortest & 145 & 2.33e-10 & 0 \\
+london & shortest & 115 & 4.66e-10 & 0 \\
+new\_york & shortest & 142 & 2.33e-10 & 0 \\
+paris & shortest & 171 & 1.46e-10 & 0 \\
+perpignan & shortest & 132 & 2.91e-10 & 5.82e-11 \\
+reykjavik & shortest & 138 & 1.16e-10 & 0 \\
+rome & shortest & 102 & 3.49e-10 & 0 \\
+sydney & shortest & 118 & 5.82e-10 & 0 \\
+toronto & shortest & 100 & 4.66e-10 & 0 \\
+\end{longtable}

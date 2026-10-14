@@ -1,0 +1,9 @@
+{
+  "python": "3.13.13 (main, Apr  7 2026, 18:19:01) [GCC 15.2.0]",
+  "method": "Sequential strict-fold evaluation against preserved exact references, scripts/strict_variant.py",
+  "panels": {
+    "original-inputs.json": 146,
+    "rational-panel.json": 35
+  },
+  "timing_scope": "Separate run from the original variant panel. No controlled speed comparison."
+}

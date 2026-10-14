@@ -1,0 +1,41 @@
+[
+  {
+    "interpolation": 1014.0000000000001,
+    "direct": 1014,
+    "split_product": 0,
+    "fused_product": -5.551115123125783e-17,
+    "binary64": 1,
+    "int64_max": 9223372036854775807,
+    "flags": [],
+    "compiler": "g++ (GCC) 15.2.0",
+    "executable_sha256": "d4cf1bc55274858dc50a6c6ad97f887a651d63022e6df5b6993fde9da07ad14b"
+  },
+  {
+    "interpolation": 1014.0000000000001,
+    "direct": 1014,
+    "split_product": 0,
+    "fused_product": -5.551115123125783e-17,
+    "binary64": 1,
+    "int64_max": 9223372036854775807,
+    "flags": [
+      "-O2",
+      "-ffp-contract=off"
+    ],
+    "compiler": "g++ (GCC) 15.2.0",
+    "executable_sha256": "d4cf1bc55274858dc50a6c6ad97f887a651d63022e6df5b6993fde9da07ad14b"
+  },
+  {
+    "interpolation": 1014.0000000000001,
+    "direct": 1014,
+    "split_product": 0,
+    "fused_product": -5.551115123125783e-17,
+    "binary64": 1,
+    "int64_max": 9223372036854775807,
+    "flags": [
+      "-O2",
+      "-ffast-math"
+    ],
+    "compiler": "g++ (GCC) 15.2.0",
+    "executable_sha256": "ca675a19be4eefee39e673faef8c6a3af3976fa21fdb5858ff9a5a207a889ff9"
+  }
+]

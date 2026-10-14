@@ -1,0 +1,453 @@
+"""IO for TD benchmark artifacts: ATF sidecar files and TD instance loading.
+
+The ATF sidecar (``<Instance>.atf.json`` or ``<Instance>.atf.json.gz``) is the
+canonical ground truth of a TD instance: one arrival-time NDCPWLF per arc of
+the complete customer-based graph. Plain JSON is used for small instances
+(debuggable at a glance), gzip for large ones; the loader accepts both. The
+gzip form is written with ``mtime=0`` so bytes are deterministic, and the
+``atf_sha256`` recorded in instance files always hashes the *uncompressed*
+canonical JSON bytes, making it storage-form independent.
+"""
+
+from __future__ import annotations
+
+import gzip
+import hashlib
+import json
+import os
+import threading
+import zlib
+from dataclasses import dataclass, field
+from pathlib import Path
+from typing import Any
+
+from mamut_routing_lib.json_utils import load_json_from_file
+from mamut_routing_lib.td.models import (
+    ATF_FORMAT,
+    ATF_FORMAT_VERSION,
+    AnyTDBenchmarkInstance,
+    BenchmarkInstanceTDVRP,
+    BenchmarkInstanceTDVRPTW,
+    TDIGPProfileRef,
+    TDRoadGraphRef,
+)
+from mamut_routing_lib.td.pwlf import NDCPWLF, PWLFError
+
+ATF_PLAIN_SUFFIX = ".atf.json"
+ATF_GZIP_SUFFIX = ".atf.json.gz"
+
+
+class ATFFormatError(ValueError):
+    """Raised when an ATF sidecar file violates the canonical format."""
+
+
+class ATFChecksumError(ATFFormatError):
+    """Raised when an ATF sidecar's canonical bytes do not match the expected sha256."""
+
+
+@dataclass
+class InstanceATFs:
+    """In-memory content of an ATF sidecar file."""
+
+    instance_name: str
+    benchmark_name: str
+    horizon: tuple[float, float]
+    num_customers: int
+    arcs: dict[tuple[int, int], NDCPWLF]
+    generator: dict[str, Any] = field(default_factory=dict)
+    format_version: int = ATF_FORMAT_VERSION
+
+    def num_vertices(self) -> int:
+        return self.num_customers + 1
+
+
+def _validate_arc_function(i: int, j: int, atf: NDCPWLF, horizon: tuple[float, float]) -> None:
+    if atf.num_breakpoints() < 2:
+        raise ATFFormatError(f"arc ({i}, {j}): ATF must have at least 2 breakpoints")
+    if atf.xs[0] != horizon[0] or atf.xs[-1] != horizon[1]:
+        raise ATFFormatError(
+            f"arc ({i}, {j}): ATF domain [{atf.xs[0]}, {atf.xs[-1]}] must span the horizon "
+            f"[{horizon[0]}, {horizon[1]}]"
+        )
+    for k in range(atf.num_breakpoints()):
+        if atf.ys[k] < atf.xs[k]:
+            raise ATFFormatError(
+                f"arc ({i}, {j}): arrival time {atf.ys[k]} before departure time {atf.xs[k]} "
+                f"at breakpoint {k} (negative travel time)"
+            )
+
+
+def _atfs_from_payload(payload: dict[str, Any], *, validate_complete: bool = True) -> InstanceATFs:
+    if payload.get("format") != ATF_FORMAT:
+        raise ATFFormatError(f"unexpected format marker: {payload.get('format')!r}")
+    if payload.get("format_version") != ATF_FORMAT_VERSION:
+        raise ATFFormatError(f"unsupported format_version: {payload.get('format_version')!r}")
+
+    horizon_raw = payload["horizon"]
+    horizon = (float(horizon_raw[0]), float(horizon_raw[1]))
+    # Same anchoring contract as the instance model: theta and the return clamp live on domains
+    # starting at abscissa 0, so a sidecar may not declare a horizon that starts below 0.
+    if horizon[0] < 0:
+        raise ATFFormatError(f"horizon must start at or after 0, got {horizon[0]!r}")
+    num_customers = int(payload["num_customers"])
+    num_vertices = num_customers + 1
+
+    arcs: dict[tuple[int, int], NDCPWLF] = {}
+    previous: tuple[int, int] | None = None
+    for entry in payload["arcs"]:
+        if len(entry) != 4:
+            raise ATFFormatError(f"arc entry must be [i, j, xs, ys], got {entry!r}")
+        i, j, xs, ys = entry
+        if not (0 <= i < num_vertices and 0 <= j < num_vertices) or i == j:
+            raise ATFFormatError(f"invalid arc indices ({i}, {j})")
+        key = (int(i), int(j))
+        if previous is not None and key <= previous:
+            raise ATFFormatError(f"arcs must be sorted lexicographically; ({i}, {j}) after {previous}")
+        previous = key
+        try:
+            atf = NDCPWLF([float(x) for x in xs], [float(y) for y in ys])
+        except PWLFError as error:
+            raise ATFFormatError(f"arc ({i}, {j}): {error}") from error
+        _validate_arc_function(key[0], key[1], atf, horizon)
+        arcs[key] = atf
+
+    if validate_complete:
+        expected = num_vertices * (num_vertices - 1)
+        if len(arcs) != expected:
+            raise ATFFormatError(
+                f"expected a complete graph with {expected} arcs over {num_vertices} vertices, "
+                f"found {len(arcs)}"
+            )
+
+    return InstanceATFs(
+        instance_name=str(payload["instance_name"]),
+        benchmark_name=str(payload["benchmark_name"]),
+        horizon=horizon,
+        num_customers=num_customers,
+        arcs=arcs,
+        generator=dict(payload.get("generator", {})),
+    )
+
+
+def atfs_to_canonical_json_bytes(atfs: InstanceATFs) -> bytes:
+    """Serialize to the canonical JSON bytes (the input of ``atf_sha256``).
+
+    Fixed key order, one arc per line, floats via Python's shortest
+    round-trip repr.
+    """
+    header_lines = [
+        "{",
+        f'    "format": {json.dumps(ATF_FORMAT)},',
+        f'    "format_version": {json.dumps(atfs.format_version)},',
+        f'    "instance_name": {json.dumps(atfs.instance_name)},',
+        f'    "benchmark_name": {json.dumps(atfs.benchmark_name)},',
+        f'    "horizon": {json.dumps(list(atfs.horizon))},',
+        f'    "num_customers": {json.dumps(atfs.num_customers)},',
+        f'    "generator": {json.dumps(atfs.generator, sort_keys=True)},',
+        '    "arcs": [',
+    ]
+    arc_lines = []
+    for (i, j) in sorted(atfs.arcs):
+        atf = atfs.arcs[(i, j)]
+        arc_lines.append("        " + json.dumps([i, j, list(atf.xs), list(atf.ys)]))
+    body = ",\n".join(arc_lines)
+    text = "\n".join(header_lines) + "\n" + body + "\n    ]\n}\n"
+    return text.encode("utf-8")
+
+
+def compute_atf_sha256(atfs: InstanceATFs) -> str:
+    return hashlib.sha256(atfs_to_canonical_json_bytes(atfs)).hexdigest()
+
+
+def _atomic_write_bytes(target: Path, payload: bytes) -> None:
+    """Write ``payload`` to a sibling temp file, then ``os.replace`` it over ``target``.
+
+    A reader never sees a partial file, an interrupted write leaves the old
+    file intact, and a ``target`` hard-linked from elsewhere is replaced (a new
+    inode), never truncated in place.
+    """
+    partial = target.with_name(f"{target.name}.{os.getpid()}.{threading.get_ident()}.partial")
+    try:
+        with partial.open("xb") as handle:
+            handle.write(payload)
+        os.replace(partial, target)
+    except BaseException:
+        partial.unlink(missing_ok=True)
+        raise
+
+
+def save_instance_atfs(atfs: InstanceATFs, path: str | Path) -> None:
+    """Write the sidecar atomically; gzip iff the path ends with ``.atf.json.gz``."""
+    target = Path(path)
+    data = atfs_to_canonical_json_bytes(atfs)
+    if target.name.endswith(ATF_GZIP_SUFFIX):
+        payload = gzip.compress(data, mtime=0)
+    elif target.name.endswith(ATF_PLAIN_SUFFIX):
+        payload = data
+    else:
+        raise ATFFormatError(f"ATF path must end with {ATF_PLAIN_SUFFIX} or {ATF_GZIP_SUFFIX}: {target.name}")
+    target.parent.mkdir(parents=True, exist_ok=True)
+    _atomic_write_bytes(target, payload)
+
+
+def atf_file_sha256(path: str | Path) -> str:
+    """sha256 of a sidecar's uncompressed bytes, streamed (no JSON parsing).
+
+    Equals the instance's ``atf_sha256`` when the file holds the canonical
+    bytes (every file written by ``save_instance_atfs``). A truncated or
+    corrupt gzip raises (``EOFError``, ``zlib.error`` or ``OSError``).
+    """
+    source = Path(path)
+    digest = hashlib.sha256()
+    opener = gzip.open if source.name.endswith(ATF_GZIP_SUFFIX) else open
+    with opener(source, "rb") as handle:
+        for chunk in iter(lambda: handle.read(1 << 20), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def load_instance_atfs(
+    path: str | Path,
+    *,
+    validate_complete: bool = True,
+    expected_sha256: str | None = None,
+) -> InstanceATFs:
+    """Load a sidecar; with ``expected_sha256`` its uncompressed bytes must hash to it (``ATFChecksumError``)."""
+    source = Path(path)
+    raw = source.read_bytes()
+    if source.name.endswith(ATF_GZIP_SUFFIX):
+        try:
+            raw = gzip.decompress(raw)
+        except (EOFError, OSError, zlib.error) as exc:
+            raise ATFFormatError(f"{source}: corrupt or truncated gzip ({exc})") from exc
+    if expected_sha256 is not None:
+        digest = hashlib.sha256(raw).hexdigest()
+        if digest != expected_sha256:
+            raise ATFChecksumError(f"{source}: sha256 {digest} does not match the expected {expected_sha256}")
+    payload = json.loads(raw.decode("utf-8"))
+    return _atfs_from_payload(payload, validate_complete=validate_complete)
+
+
+def get_atf_path_for_instance(instance_path: str | Path, atf_path: str | None = None) -> Path:
+    """Resolve the sidecar path next to the instance file.
+
+    When ``atf_path`` (from the instance's ``td`` block) is given it is
+    resolved relative to the instance directory; otherwise the conventional
+    sibling names are probed (plain first, then gzip).
+    """
+    base = Path(instance_path)
+    if atf_path is not None:
+        return base.parent / atf_path
+    stem = base.name.removesuffix(".vrp.json")
+    plain = base.parent / f"{stem}{ATF_PLAIN_SUFFIX}"
+    if plain.exists():
+        return plain
+    return base.parent / f"{stem}{ATF_GZIP_SUFFIX}"
+
+
+def load_td_benchmark_instance(instance_path: str | Path) -> AnyTDBenchmarkInstance:
+    """Load and validate the instance file only (no sidecar)."""
+    payload = load_json_from_file(instance_path)
+    return td_instance_from_payload(payload)
+
+
+def td_instance_from_payload(payload: dict[str, Any]) -> AnyTDBenchmarkInstance:
+    if "time_windows" in payload:
+        return BenchmarkInstanceTDVRPTW(**payload)
+    return BenchmarkInstanceTDVRP(**payload)
+
+
+@dataclass
+class LoadedTDInstance:
+    """A TD instance paired with its arrival-time functions.
+
+    ``atf_path`` is the on-disk ATF sidecar for ``atf-ndcpwlf`` instances and
+    ``None`` for the materialized models; ``categories_path``
+    (``igp-profile``) and ``road_graph_path`` + ``traffic_path``
+    (``road-graph`` v2) point to the respective compact sidecars in the
+    materialized cases. ``collection_root`` is set for instances living in a
+    marker-rooted collection (road-graph sidecar paths resolve against it).
+    """
+
+    instance: AnyTDBenchmarkInstance
+    atfs: InstanceATFs
+    instance_path: Path
+    atf_path: Path | None
+    categories_path: Path | None = None
+    road_graph_path: Path | None = None
+    traffic_path: Path | None = None
+    collection_root: Path | None = None
+
+
+def _load_td_instance_igp(
+    source: Path,
+    instance: AnyTDBenchmarkInstance,
+    *,
+    verify_sha256: bool,
+) -> LoadedTDInstance:
+    """igp-profile branch: load categories, materialize the canonical ATFs."""
+    from mamut_routing_lib.td.igp import (
+        compute_categories_sha256,
+        load_instance_categories,
+        materialize_instance_atfs,
+    )
+
+    td = instance.td
+    categories_path = source.parent / td.categories_path
+    categories = load_instance_categories(categories_path)
+    if categories.num_customers != instance.num_customers:
+        raise ATFFormatError(
+            f"categories num_customers {categories.num_customers} does not match "
+            f"{instance.num_customers}"
+        )
+    if categories.benchmark_name != instance.benchmark_name.value:
+        raise ATFFormatError(
+            f"categories benchmark_name {categories.benchmark_name!r} does not match "
+            f"{instance.benchmark_name.value!r}"
+        )
+    if verify_sha256 and td.categories_sha256 is not None:
+        digest = compute_categories_sha256(categories)
+        if digest != td.categories_sha256:
+            raise ATFFormatError(
+                f"categories sha256 mismatch: computed {digest}, instance declares {td.categories_sha256}"
+            )
+    atfs = materialize_instance_atfs(instance, categories)
+    if verify_sha256 and td.atf_sha256 is not None:
+        digest = compute_atf_sha256(atfs)
+        if digest != td.atf_sha256:
+            raise ATFFormatError(
+                f"materialized ATF sha256 mismatch: computed {digest}, instance declares {td.atf_sha256}"
+            )
+    return LoadedTDInstance(
+        instance=instance,
+        atfs=atfs,
+        instance_path=source,
+        atf_path=None,
+        categories_path=categories_path,
+    )
+
+
+def _load_td_instance_roadgraph(
+    source: Path,
+    instance: AnyTDBenchmarkInstance,
+    *,
+    verify_sha256: bool,
+    collection_root: Path | None = None,
+) -> LoadedTDInstance:
+    """road-graph branch (v2): resolve both sidecars against the collection
+    root, cross-check the graph/traffic pair, materialize the canonical ATFs."""
+    from mamut_routing_lib.sidecars import require_collection_root
+    from mamut_routing_lib.td.roadgraph import (
+        compute_road_graph_sha256,
+        compute_traffic_overlay_sha256,
+        load_instance_road_graph,
+        load_traffic_overlay,
+        materialize_instance_atfs_roadgraph,
+        validate_overlay_against_road,
+    )
+
+    td = instance.td
+    root = require_collection_root(source, collection_root)
+    road_graph_path = root / td.graph.path
+    traffic_path = root / td.traffic.path
+    road = load_instance_road_graph(road_graph_path)
+    overlay = load_traffic_overlay(traffic_path)
+    if road.num_customers != instance.num_customers:
+        raise ATFFormatError(
+            f"road-graph num_customers {road.num_customers} does not match "
+            f"{instance.num_customers}"
+        )
+    if road.benchmark_name != instance.benchmark_name.value:
+        raise ATFFormatError(
+            f"road-graph benchmark_name {road.benchmark_name!r} does not match "
+            f"{instance.benchmark_name.value!r}"
+        )
+    if (float(instance.horizon[0]), float(instance.horizon[1])) != road.horizon:
+        raise ATFFormatError(
+            f"road-graph horizon {road.horizon} does not match instance horizon "
+            f"{tuple(instance.horizon)}"
+        )
+    validate_overlay_against_road(overlay, road)
+    if verify_sha256 and td.graph.sha256 is not None:
+        digest = compute_road_graph_sha256(road)
+        if digest != td.graph.sha256:
+            raise ATFFormatError(
+                f"road-graph sha256 mismatch: computed {digest}, instance declares {td.graph.sha256}"
+            )
+    if verify_sha256 and td.traffic.sha256 is not None:
+        digest = compute_traffic_overlay_sha256(overlay)
+        if digest != td.traffic.sha256:
+            raise ATFFormatError(
+                f"traffic-overlay sha256 mismatch: computed {digest}, "
+                f"instance declares {td.traffic.sha256}"
+            )
+    atfs = materialize_instance_atfs_roadgraph(instance, road, overlay)
+    if verify_sha256 and td.atf_sha256 is not None:
+        digest = compute_atf_sha256(atfs)
+        if digest != td.atf_sha256:
+            raise ATFFormatError(
+                f"materialized ATF sha256 mismatch: computed {digest}, instance declares {td.atf_sha256}"
+            )
+    return LoadedTDInstance(
+        instance=instance,
+        atfs=atfs,
+        instance_path=source,
+        atf_path=None,
+        road_graph_path=road_graph_path,
+        traffic_path=traffic_path,
+        collection_root=root,
+    )
+
+
+def load_td_instance(
+    instance_path: str | Path,
+    *,
+    verify_sha256: bool = True,
+    validate_complete: bool = True,
+    collection_root: str | Path | None = None,
+) -> LoadedTDInstance:
+    """Load instance + sidecar, checking their mutual consistency.
+
+    For ``igp-profile`` and ``road-graph`` instances the ATFs are
+    materialized deterministically from the td block and the compact
+    sidecar(s); ``verify_sha256`` then covers both the sidecar hashes (cheap)
+    and ``atf_sha256`` (a full canonical serialization of the materialized
+    ATFs -- minutes at n=1000; pass ``verify_sha256=False`` in solver hot
+    paths, materialization is deterministic either way). ``road-graph``
+    sidecar paths are collection-root-relative: the root is found by walking
+    up to the ``mamut-collection.json`` marker, or passed explicitly via
+    ``collection_root``.
+    """
+    source = Path(instance_path)
+    instance = load_td_benchmark_instance(source)
+    if isinstance(instance.td, TDIGPProfileRef):
+        return _load_td_instance_igp(source, instance, verify_sha256=verify_sha256)
+    if isinstance(instance.td, TDRoadGraphRef):
+        return _load_td_instance_roadgraph(
+            source,
+            instance,
+            verify_sha256=verify_sha256,
+            collection_root=Path(collection_root) if collection_root is not None else None,
+        )
+    atf_path = get_atf_path_for_instance(source, instance.td.atf_path)
+    atfs = load_instance_atfs(atf_path, validate_complete=validate_complete)
+
+    if atfs.instance_name != instance.instance_name:
+        raise ATFFormatError(
+            f"sidecar instance_name {atfs.instance_name!r} does not match {instance.instance_name!r}"
+        )
+    if atfs.num_customers != instance.num_customers:
+        raise ATFFormatError(
+            f"sidecar num_customers {atfs.num_customers} does not match {instance.num_customers}"
+        )
+    if (float(instance.horizon[0]), float(instance.horizon[1])) != atfs.horizon:
+        raise ATFFormatError(
+            f"sidecar horizon {atfs.horizon} does not match instance horizon {tuple(instance.horizon)}"
+        )
+    if verify_sha256 and instance.td.atf_sha256 is not None:
+        digest = compute_atf_sha256(atfs)
+        if digest != instance.td.atf_sha256:
+            raise ATFFormatError(
+                f"sidecar sha256 mismatch: computed {digest}, instance declares {instance.td.atf_sha256}"
+            )
+    return LoadedTDInstance(instance=instance, atfs=atfs, instance_path=source, atf_path=atf_path)

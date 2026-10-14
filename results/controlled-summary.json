@@ -1,0 +1,18 @@
+{
+  "td": {
+    "original": {
+      "route_ratio": 0.6678268496557779,
+      "full_checker_ratio": 0.732614099237749
+    },
+    "broader": {
+      "route_ratio": 0.698203014689958,
+      "full_checker_ratio": 0.7053832890718605
+    }
+  },
+  "static_ranking_ratio": 152.54243054338548,
+  "rational_ratio": 315.19210902484144,
+  "rational_complete": 24,
+  "rational_selected": 24,
+  "canonical_policy_disagreements": 15,
+  "full_checker_numerical_outputs_verified": 2534
+}

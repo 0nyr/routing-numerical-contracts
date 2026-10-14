@@ -1,0 +1,1058 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{mamutRoutingPlatform2026}{software}{}{}
+      \name{author}{1}{}{%
+        {{hash=e3268bd6ad768124521f70c023133a95}{%
+           family={{ANR MAMUT}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e3268bd6ad768124521f70c023133a95}
+      \strng{fullhash}{e3268bd6ad768124521f70c023133a95}
+      \strng{fullhashraw}{e3268bd6ad768124521f70c023133a95}
+      \strng{bibnamehash}{e3268bd6ad768124521f70c023133a95}
+      \strng{authorbibnamehash}{e3268bd6ad768124521f70c023133a95}
+      \strng{authornamehash}{e3268bd6ad768124521f70c023133a95}
+      \strng{authorfullhash}{e3268bd6ad768124521f70c023133a95}
+      \strng{authorfullhashraw}{e3268bd6ad768124521f70c023133a95}
+      \field{extraname}{1}
+      \field{labelalpha}{ANR26}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Frozen ecosystem source snapshot}
+      \field{title}{{MAMUT-routing}: Benchmark Catalog, Solution Store and Publication Tools}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/ANR-MAMUT/MAMUT-routing/tree/0d48b4f383c4336af7de8a2f2cac0e8502da6c83
+      \endverb
+      \verb{url}
+      \verb https://github.com/ANR-MAMUT/MAMUT-routing/tree/0d48b4f383c4336af7de8a2f2cac0e8502da6c83
+      \endverb
+    \endentry
+    \entry{mamutChecker0112026}{software}{}{}
+      \name{author}{1}{}{%
+        {{hash=e3268bd6ad768124521f70c023133a95}{%
+           family={{ANR MAMUT}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e3268bd6ad768124521f70c023133a95}
+      \strng{fullhash}{e3268bd6ad768124521f70c023133a95}
+      \strng{fullhashraw}{e3268bd6ad768124521f70c023133a95}
+      \strng{bibnamehash}{e3268bd6ad768124521f70c023133a95}
+      \strng{authorbibnamehash}{e3268bd6ad768124521f70c023133a95}
+      \strng{authornamehash}{e3268bd6ad768124521f70c023133a95}
+      \strng{authorfullhash}{e3268bd6ad768124521f70c023133a95}
+      \strng{authorfullhashraw}{e3268bd6ad768124521f70c023133a95}
+      \field{extraname}{2}
+      \field{labelalpha}{ANR26}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Frozen source commit 425dff3}
+      \field{title}{{MAMUT-routing-lib} v0.11.0}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/ANR-MAMUT/MAMUT-routing-lib/tree/425dff351fdd9522ea6bb8c537dd416dfcd19614
+      \endverb
+      \verb{url}
+      \verb https://github.com/ANR-MAMUT/MAMUT-routing-lib/tree/425dff351fdd9522ea6bb8c537dd416dfcd19614
+      \endverb
+    \endentry
+    \entry{mamutChecker0122026}{software}{}{}
+      \name{author}{1}{}{%
+        {{hash=e3268bd6ad768124521f70c023133a95}{%
+           family={{ANR MAMUT}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e3268bd6ad768124521f70c023133a95}
+      \strng{fullhash}{e3268bd6ad768124521f70c023133a95}
+      \strng{fullhashraw}{e3268bd6ad768124521f70c023133a95}
+      \strng{bibnamehash}{e3268bd6ad768124521f70c023133a95}
+      \strng{authorbibnamehash}{e3268bd6ad768124521f70c023133a95}
+      \strng{authornamehash}{e3268bd6ad768124521f70c023133a95}
+      \strng{authorfullhash}{e3268bd6ad768124521f70c023133a95}
+      \strng{authorfullhashraw}{e3268bd6ad768124521f70c023133a95}
+      \field{extraname}{3}
+      \field{labelalpha}{ANR26}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Frozen source commit a9f7d9a}
+      \field{title}{{MAMUT-routing-lib} v0.12.0}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/ANR-MAMUT/MAMUT-routing-lib/tree/a9f7d9a718b1d7d2b5db6ccc470d6c20065ec836
+      \endverb
+      \verb{url}
+      \verb https://github.com/ANR-MAMUT/MAMUT-routing-lib/tree/a9f7d9a718b1d7d2b5db6ccc470d6c20065ec836
+      \endverb
+    \endentry
+    \entry{rascoussierKAYROSTechReport2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=263a1eb52ff05197f964446e7191ef98}{%
+           family={Rascoussier},
+           familyi={R\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{fullhash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{fullhashraw}{263a1eb52ff05197f964446e7191ef98}
+      \strng{bibnamehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authorbibnamehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authornamehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authorfullhash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authorfullhashraw}{263a1eb52ff05197f964446e7191ef98}
+      \field{extraname}{1}
+      \field{labelalpha}{Ras26}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.OC}
+      \field{eprinttype}{arxiv}
+      \field{title}{{KAYROS}: An Anytime and Exact Open-Source Solver for Duration-Minimization Time-Dependent Vehicle Routing. {A} Technical Report and a Case Study in Human-{AI} Engineering}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb 2607.23116
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2607.23116
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2607.23116
+      \endverb
+    \endentry
+    \entry{rascoussierKAYROSAnytimeExact2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=263a1eb52ff05197f964446e7191ef98}{%
+           family={Rascoussier},
+           familyi={R\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{fullhash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{fullhashraw}{263a1eb52ff05197f964446e7191ef98}
+      \strng{bibnamehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authorbibnamehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authornamehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authorfullhash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authorfullhashraw}{263a1eb52ff05197f964446e7191ef98}
+      \field{extraname}{2}
+      \field{labelalpha}{Ras26}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arxiv}
+      \field{note}{Extended version. Local source revision dated 2026-09-29}
+      \field{title}{{KAYROS}: An Anytime and Exact Solver for the Time-Dependent Vehicle Routing Problem with Time Windows}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb 2609.29597
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2609.29597
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2609.29597
+      \endverb
+    \endentry
+    \entry{rascoussierAnytimeSolverEvaluation2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=263a1eb52ff05197f964446e7191ef98}{%
+           family={Rascoussier},
+           familyi={R\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{fullhash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{fullhashraw}{263a1eb52ff05197f964446e7191ef98}
+      \strng{bibnamehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authorbibnamehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authornamehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authorfullhash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authorfullhashraw}{263a1eb52ff05197f964446e7191ef98}
+      \field{extraname}{3}
+      \field{labelalpha}{Ras26}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arxiv}
+      \field{note}{Extended version}
+      \field{title}{Anytime Solver Evaluation with a Normalized Signed Primal Integral and Explicit Reference Policies}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb 2608.18288
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2608.18288
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2608.18288
+      \endverb
+    \endentry
+    \entry{pythonFraction2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=c7b5508dc5e59a2846d22617276cc27c}{%
+           family={{Python Software Foundation}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{fullhash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{fullhashraw}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{bibnamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorbibnamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authornamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorfullhash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorfullhashraw}{c7b5508dc5e59a2846d22617276cc27c}
+      \field{extraname}{1}
+      \field{labelalpha}{Pyt26}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Rational numbers: {fractions}}
+      \field{urlday}{30}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.python.org/3/library/fractions.html
+      \endverb
+      \verb{url}
+      \verb https://docs.python.org/3/library/fractions.html
+      \endverb
+    \endentry
+    \entry{pythonFsum2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=c7b5508dc5e59a2846d22617276cc27c}{%
+           family={{Python Software Foundation}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{fullhash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{fullhashraw}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{bibnamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorbibnamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authornamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorfullhash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorfullhashraw}{c7b5508dc5e59a2846d22617276cc27c}
+      \field{extraname}{2}
+      \field{labelalpha}{Pyt26}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mathematical functions: {math.fsum}}
+      \field{urlday}{30}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.python.org/3/library/math.html#math.fsum
+      \endverb
+      \verb{url}
+      \verb https://docs.python.org/3/library/math.html#math.fsum
+      \endverb
+    \endentry
+    \entry{ogitaAccurateSum2005}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d8399307a6ea81731e213bc94e870cdc}{%
+           family={Ogita},
+           familyi={O\bibinitperiod},
+           given={Takeshi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7c19d45439ea73ff9f7817ca13045f9d}{%
+           family={Rump},
+           familyi={R\bibinitperiod},
+           given={Siegfried\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=75b7c84c5c74884c6678da2f7257c17e}{%
+           family={Oishi},
+           familyi={O\bibinitperiod},
+           given={Shin'ichi},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{017b7c44c0e87bb08636aabf263eebf5}
+      \strng{fullhash}{d772f51382b90c38d7ff59d711be4297}
+      \strng{fullhashraw}{d772f51382b90c38d7ff59d711be4297}
+      \strng{bibnamehash}{d772f51382b90c38d7ff59d711be4297}
+      \strng{authorbibnamehash}{d772f51382b90c38d7ff59d711be4297}
+      \strng{authornamehash}{017b7c44c0e87bb08636aabf263eebf5}
+      \strng{authorfullhash}{d772f51382b90c38d7ff59d711be4297}
+      \strng{authorfullhashraw}{d772f51382b90c38d7ff59d711be4297}
+      \field{labelalpha}{ORO05}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIAM Journal on Scientific Computing}
+      \field{number}{6}
+      \field{title}{Accurate Sum and Dot Product}
+      \field{volume}{26}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{pages}{1955\bibrangedash 1988}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1137/030601818
+      \endverb
+    \endentry
+    \entry{lera-romeroLinearEdgeCosts2020}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=0337644a923db3534b363b739902a8bd}{%
+           family={Lera-Romero},
+           familyi={L\bibinithyphendelim R\bibinitperiod},
+           given={Gonzalo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=86c18237dc860982f662ad18ced72ba7}{%
+           family={Miranda\bibnamedelima Bront},
+           familyi={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Juan\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=f101e0ea8dc1cd72a342fd17a2a18552}{%
+           family={Soulignac},
+           familyi={S\bibinitperiod},
+           given={Francisco\bibnamedelima J.},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{7711b52579b85470a7dda1567d6ad838}
+      \strng{fullhash}{c279113c23abb91c4138bedf20ce5134}
+      \strng{fullhashraw}{c279113c23abb91c4138bedf20ce5134}
+      \strng{bibnamehash}{c279113c23abb91c4138bedf20ce5134}
+      \strng{authorbibnamehash}{c279113c23abb91c4138bedf20ce5134}
+      \strng{authornamehash}{7711b52579b85470a7dda1567d6ad838}
+      \strng{authorfullhash}{c279113c23abb91c4138bedf20ce5134}
+      \strng{authorfullhashraw}{c279113c23abb91c4138bedf20ce5134}
+      \field{labelalpha}{LMS20}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Networks}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{Linear edge costs and labeling algorithms: The case of the time-dependent vehicle routing problem with time windows}
+      \field{volume}{76}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{24\bibrangedash 53}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1002/net.21937
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/net.21937
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/net.21937
+      \endverb
+    \endentry
+    \entry{dabiaBranchPriceTimeDependent2013}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=50a59f3cdab0ea1674be1e43126720f5}{%
+           family={Dabia},
+           familyi={D\bibinitperiod},
+           given={Said},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2938a57825fdb9a5a7f8c36d8fa2e37d}{%
+           family={Ropke},
+           familyi={R\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b63aeb723d16eafda6952b3b6992d5b3}{%
+           family={Van\bibnamedelima Woensel},
+           familyi={V\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a39c06cdcf241000954c9d9fbfbb3e09}{%
+           family={De\bibnamedelima Kok},
+           familyi={D\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={Ton},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d0962303b0cefe8e953e0596c9a620a}
+      \strng{fullhash}{e2f6da9c81285f2f9e6b1ca01c45e7a9}
+      \strng{fullhashraw}{e2f6da9c81285f2f9e6b1ca01c45e7a9}
+      \strng{bibnamehash}{e2f6da9c81285f2f9e6b1ca01c45e7a9}
+      \strng{authorbibnamehash}{e2f6da9c81285f2f9e6b1ca01c45e7a9}
+      \strng{authornamehash}{3d0962303b0cefe8e953e0596c9a620a}
+      \strng{authorfullhash}{e2f6da9c81285f2f9e6b1ca01c45e7a9}
+      \strng{authorfullhashraw}{e2f6da9c81285f2f9e6b1ca01c45e7a9}
+      \field{extraname}{1}
+      \field{labelalpha}{Dab+13}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Transportation Science}
+      \field{month}{8}
+      \field{number}{3}
+      \field{title}{Branch and Price for the Time-Dependent Vehicle Routing Problem with Time Windows}
+      \field{volume}{47}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{380\bibrangedash 396}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1287/trsc.1120.0445
+      \endverb
+      \verb{urlraw}
+      \verb https://pubsonline.informs.org/doi/10.1287/trsc.1120.0445
+      \endverb
+      \verb{url}
+      \verb https://pubsonline.informs.org/doi/10.1287/trsc.1120.0445
+      \endverb
+    \endentry
+    \entry{onyrInvestigation2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=263a1eb52ff05197f964446e7191ef98}{%
+           family={Rascoussier},
+           familyi={R\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{fullhash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{fullhashraw}{263a1eb52ff05197f964446e7191ef98}
+      \strng{bibnamehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authorbibnamehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authornamehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authorfullhash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authorfullhashraw}{263a1eb52ff05197f964446e7191ef98}
+      \field{extraname}{4}
+      \field{labelalpha}{Ras26}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{extraalpha}{4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{14}
+      \field{month}{10}
+      \field{note}{Public code, compact input panels and numerical evidence}
+      \field{title}{Routing numerical contracts: code, input panels and results}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/0nyr/routing-numerical-contracts
+      \endverb
+      \verb{url}
+      \verb https://github.com/0nyr/routing-numerical-contracts
+      \endverb
+    \endentry
+    \entry{goldbergFloatingPoint1991}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=d55a57c88a14828a53b9e8db48c889d1}{%
+           family={Goldberg},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{fullhash}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{fullhashraw}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{bibnamehash}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{authorbibnamehash}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{authornamehash}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{authorfullhash}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{authorfullhashraw}{d55a57c88a14828a53b9e8db48c889d1}
+      \field{labelalpha}{Gol91}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{number}{1}
+      \field{title}{What Every Computer Scientist Should Know About Floating-Point Arithmetic}
+      \field{volume}{23}
+      \field{year}{1991}
+      \field{dateera}{ce}
+      \field{pages}{5\bibrangedash 48}
+      \range{pages}{44}
+      \verb{doi}
+      \verb 10.1145/103162.103163
+      \endverb
+      \verb{urlraw}
+      \verb https://docs.oracle.com/cd/E19957-01/816-2464/ncg_goldberg.html
+      \endverb
+      \verb{url}
+      \verb https://docs.oracle.com/cd/E19957-01/816-2464/ncg_goldberg.html
+      \endverb
+    \endentry
+    \entry{rascoussierImpactScalingRounding2026}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=263a1eb52ff05197f964446e7191ef98}{%
+           family={Rascoussier},
+           familyi={R\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=af6ee46bc57b0227e6959e50b19824ea}{%
+           family={Billot},
+           familyi={B\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod}}}%
+        {{hash=16bf7b88d4bd3ead7ff66f9909fd7fe9}{%
+           family={Fahed},
+           familyi={F\bibinitperiod},
+           given={Lina},
+           giveni={L\bibinitperiod}}}%
+        {{hash=06801325150e7eb386e08c097fbbe0da}{%
+           family={Solnon},
+           familyi={S\bibinitperiod},
+           given={Christine},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Ischia, Italy}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{efd57ccb8e9885895c0eea6b2171e500}
+      \strng{fullhash}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{fullhashraw}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{bibnamehash}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{authorbibnamehash}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{authornamehash}{efd57ccb8e9885895c0eea6b2171e500}
+      \strng{authorfullhash}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{authorfullhashraw}{72e87b87bdb4f9a8c07899f49006263d}
+      \field{labelalpha}{Ras+26}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{16th {{Metaheuristics International Conference}} ({{MIC}})}
+      \field{eprinttype}{arxiv}
+      \field{title}{Impact of Scaling and Rounding on Metaheuristic Performance for the Vehicle Routing Problem with Time Windows}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb 2606.09196
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.science/hal-05646952
+      \endverb
+      \verb{url}
+      \verb https://hal.science/hal-05646952
+      \endverb
+    \endentry
+    \entry{woudaDoubles2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=cbba10f35a478f9b43be419e84778039}{%
+           family={Wouda},
+           familyi={W\bibinitperiod},
+           given={Niels},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbba10f35a478f9b43be419e84778039}
+      \strng{fullhash}{cbba10f35a478f9b43be419e84778039}
+      \strng{fullhashraw}{cbba10f35a478f9b43be419e84778039}
+      \strng{bibnamehash}{cbba10f35a478f9b43be419e84778039}
+      \strng{authorbibnamehash}{cbba10f35a478f9b43be419e84778039}
+      \strng{authornamehash}{cbba10f35a478f9b43be419e84778039}
+      \strng{authorfullhash}{cbba10f35a478f9b43be419e84778039}
+      \strng{authorfullhashraw}{cbba10f35a478f9b43be419e84778039}
+      \field{extraname}{1}
+      \field{labelalpha}{Wou24}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{month}{6}
+      \field{title}{Switch back to doubles: {PyVRP} issue 623}
+      \field{urlday}{30}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/PyVRP/PyVRP/issues/623
+      \endverb
+      \verb{url}
+      \verb https://github.com/PyVRP/PyVRP/issues/623
+      \endverb
+    \endentry
+    \entry{woudaFloats2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=cbba10f35a478f9b43be419e84778039}{%
+           family={Wouda},
+           familyi={W\bibinitperiod},
+           given={Niels},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbba10f35a478f9b43be419e84778039}
+      \strng{fullhash}{cbba10f35a478f9b43be419e84778039}
+      \strng{fullhashraw}{cbba10f35a478f9b43be419e84778039}
+      \strng{bibnamehash}{cbba10f35a478f9b43be419e84778039}
+      \strng{authorbibnamehash}{cbba10f35a478f9b43be419e84778039}
+      \strng{authornamehash}{cbba10f35a478f9b43be419e84778039}
+      \strng{authorfullhash}{cbba10f35a478f9b43be419e84778039}
+      \strng{authorfullhashraw}{cbba10f35a478f9b43be419e84778039}
+      \field{extraname}{2}
+      \field{labelalpha}{Wou26}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{27}
+      \field{month}{9}
+      \field{note}{Merged on 30 September 2026}
+      \field{title}{Switch back to floats: {PyVRP} pull request 1196}
+      \field{urlday}{30}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/PyVRP/PyVRP/pull/1196
+      \endverb
+      \verb{url}
+      \verb https://github.com/PyVRP/PyVRP/pull/1196
+      \endverb
+    \endentry
+    \entry{zippoNancy2022}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b1249df8a25c5e4ba07a278911f9505f}{%
+           family={Zippo},
+           familyi={Z\bibinitperiod},
+           given={Raffaele},
+           giveni={R\bibinitperiod}}}%
+        {{hash=97a25879e67637ba9e314a4a004303ee}{%
+           family={Stea},
+           familyi={S\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{43dd3d13df468aeef923bff6ca8822fc}
+      \strng{fullhash}{78b32c05c3e6abbad18cdf6a327cba36}
+      \strng{fullhashraw}{78b32c05c3e6abbad18cdf6a327cba36}
+      \strng{bibnamehash}{78b32c05c3e6abbad18cdf6a327cba36}
+      \strng{authorbibnamehash}{78b32c05c3e6abbad18cdf6a327cba36}
+      \strng{authornamehash}{43dd3d13df468aeef923bff6ca8822fc}
+      \strng{authorfullhash}{78b32c05c3e6abbad18cdf6a327cba36}
+      \strng{authorfullhashraw}{78b32c05c3e6abbad18cdf6a327cba36}
+      \field{extraname}{1}
+      \field{labelalpha}{ZS22}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SoftwareX}
+      \field{title}{{Nancy}: An efficient parallel Network Calculus library}
+      \field{volume}{19}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{101178}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.softx.2022.101178
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2205.11449v2
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2205.11449v2
+      \endverb
+    \endentry
+    \entry{zippoPseudoInverseComposition2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=b1249df8a25c5e4ba07a278911f9505f}{%
+           family={Zippo},
+           familyi={Z\bibinitperiod},
+           given={Raffaele},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0370a1355efb4b02241c808d05c194b7}{%
+           family={Nikolaus},
+           familyi={N\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=97a25879e67637ba9e314a4a004303ee}{%
+           family={Stea},
+           familyi={S\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{43dd3d13df468aeef923bff6ca8822fc}
+      \strng{fullhash}{f7abf801668b59e8fe6a58632f507e0d}
+      \strng{fullhashraw}{f7abf801668b59e8fe6a58632f507e0d}
+      \strng{bibnamehash}{f7abf801668b59e8fe6a58632f507e0d}
+      \strng{authorbibnamehash}{f7abf801668b59e8fe6a58632f507e0d}
+      \strng{authornamehash}{43dd3d13df468aeef923bff6ca8822fc}
+      \strng{authorfullhash}{f7abf801668b59e8fe6a58632f507e0d}
+      \strng{authorfullhashraw}{f7abf801668b59e8fe6a58632f507e0d}
+      \field{extraname}{2}
+      \field{labelalpha}{ZNS23}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Discrete Event Dynamic Systems}
+      \field{title}{Extending the network calculus algorithmic toolbox for ultimately pseudo-periodic functions: pseudo-inverse and composition}
+      \field{volume}{33}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{181\bibrangedash 219}
+      \range{pages}{39}
+      \verb{doi}
+      \verb 10.1007/s10626-022-00373-5
+      \endverb
+    \endentry
+    \entry{mpfrManual2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=87d4bf55d9cfd010edd387fc15dec098}{%
+           family={{MPFR Project}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{87d4bf55d9cfd010edd387fc15dec098}
+      \strng{fullhash}{87d4bf55d9cfd010edd387fc15dec098}
+      \strng{fullhashraw}{87d4bf55d9cfd010edd387fc15dec098}
+      \strng{bibnamehash}{87d4bf55d9cfd010edd387fc15dec098}
+      \strng{authorbibnamehash}{87d4bf55d9cfd010edd387fc15dec098}
+      \strng{authornamehash}{87d4bf55d9cfd010edd387fc15dec098}
+      \strng{authorfullhash}{87d4bf55d9cfd010edd387fc15dec098}
+      \strng{authorfullhashraw}{87d4bf55d9cfd010edd387fc15dec098}
+      \field{labelalpha}{MPF25}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{GNU MPFR} 4.2.2 Manual}
+      \field{urlday}{14}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mpfr.org/mpfr-current/mpfr.html
+      \endverb
+      \verb{url}
+      \verb https://www.mpfr.org/mpfr-current/mpfr.html
+      \endverb
+    \endentry
+    \entry{johanssonArb2017}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=1cd2f71317215f5336dbc31416e0bbd7}{%
+           family={Johansson},
+           familyi={J\bibinitperiod},
+           given={Fredrik},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{1cd2f71317215f5336dbc31416e0bbd7}
+      \strng{fullhash}{1cd2f71317215f5336dbc31416e0bbd7}
+      \strng{fullhashraw}{1cd2f71317215f5336dbc31416e0bbd7}
+      \strng{bibnamehash}{1cd2f71317215f5336dbc31416e0bbd7}
+      \strng{authorbibnamehash}{1cd2f71317215f5336dbc31416e0bbd7}
+      \strng{authornamehash}{1cd2f71317215f5336dbc31416e0bbd7}
+      \strng{authorfullhash}{1cd2f71317215f5336dbc31416e0bbd7}
+      \strng{authorfullhashraw}{1cd2f71317215f5336dbc31416e0bbd7}
+      \field{labelalpha}{Joh17}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arxiv}
+      \field{journaltitle}{IEEE Transactions on Computers}
+      \field{number}{8}
+      \field{title}{{Arb}: Efficient Arbitrary-Precision Midpoint-Radius Interval Arithmetic}
+      \field{volume}{66}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{1281\bibrangedash 1292}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TC.2017.2690633
+      \endverb
+      \verb{eprint}
+      \verb 1611.02831
+      \endverb
+    \endentry
+    \entry{pythonSum2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=c7b5508dc5e59a2846d22617276cc27c}{%
+           family={{Python Software Foundation}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{fullhash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{fullhashraw}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{bibnamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorbibnamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authornamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorfullhash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorfullhashraw}{c7b5508dc5e59a2846d22617276cc27c}
+      \field{extraname}{3}
+      \field{labelalpha}{Pyt26}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Built-in functions: {sum}}
+      \field{urlday}{30}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.python.org/3/library/functions.html#sum
+      \endverb
+      \verb{url}
+      \verb https://docs.python.org/3/library/functions.html#sum
+      \endverb
+    \endentry
+    \entry{visserEfficientMoveEvaluations2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=cbaf9de2f7b5633831e1a08277e61d6e}{%
+           family={Visser},
+           familyi={V\bibinitperiod},
+           given={Thomas\bibnamedelima R.},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=cee102db23aec43a6bf4ded0c489d1aa}{%
+           family={Spliet},
+           familyi={S\bibinitperiod},
+           given={Remy},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d5ac56285a7f0ff8812515f3ea2bb35}
+      \strng{fullhash}{0ab2a15dad8d26da19873ba25d5c1f4a}
+      \strng{fullhashraw}{0ab2a15dad8d26da19873ba25d5c1f4a}
+      \strng{bibnamehash}{0ab2a15dad8d26da19873ba25d5c1f4a}
+      \strng{authorbibnamehash}{0ab2a15dad8d26da19873ba25d5c1f4a}
+      \strng{authornamehash}{3d5ac56285a7f0ff8812515f3ea2bb35}
+      \strng{authorfullhash}{0ab2a15dad8d26da19873ba25d5c1f4a}
+      \strng{authorfullhashraw}{0ab2a15dad8d26da19873ba25d5c1f4a}
+      \field{labelalpha}{VS20}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Transportation Science}
+      \field{month}{7}
+      \field{number}{4}
+      \field{title}{Efficient Move Evaluations for Time-Dependent Vehicle Routing Problems}
+      \field{volume}{54}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{1091\bibrangedash 1112}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1287/trsc.2019.0938
+      \endverb
+      \verb{urlraw}
+      \verb https://pubsonline.informs.org/doi/10.1287/trsc.2019.0938
+      \endverb
+      \verb{url}
+      \verb https://pubsonline.informs.org/doi/10.1287/trsc.2019.0938
+      \endverb
+    \endentry
+    \entry{blauthVehicleRoutingTimedependent2024}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=b4bed43fdf29b8e5aa614cedd65274dd}{%
+           family={Blauth},
+           familyi={B\bibinitperiod},
+           given={Jannis},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3ba0af8f2dc61f9cdf3b47128ecdd7a9}{%
+           family={Held},
+           familyi={H\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7b71ff3e2bae6835ab393311aa9fa989}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+        {{hash=033dfb29389aa39095f200f167200232}{%
+           family={Schlomberg},
+           familyi={S\bibinitperiod},
+           given={Niklas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=214c9e3e2d4e01e78e774800b5cf43a8}{%
+           family={Traub},
+           familyi={T\bibinitperiod},
+           given={Vera},
+           giveni={V\bibinitperiod}}}%
+        {{hash=6252c8f2fdf017ae172e03f9a67e2759}{%
+           family={Tröbst},
+           familyi={T\bibinitperiod},
+           given={Thorben},
+           giveni={T\bibinitperiod}}}%
+        {{hash=60b91c18a457236628f65ee35ab35ddb}{%
+           family={Vygen},
+           familyi={V\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1decb9ae595190c837cc281e4c24c728}
+      \strng{fullhash}{16b31b65ad4ad26a0377297095612826}
+      \strng{fullhashraw}{16b31b65ad4ad26a0377297095612826}
+      \strng{bibnamehash}{1e7e47b87a9054a03163844dda2e2ebd}
+      \strng{authorbibnamehash}{1e7e47b87a9054a03163844dda2e2ebd}
+      \strng{authornamehash}{1decb9ae595190c837cc281e4c24c728}
+      \strng{authorfullhash}{16b31b65ad4ad26a0377297095612826}
+      \strng{authorfullhashraw}{16b31b65ad4ad26a0377297095612826}
+      \field{labelalpha}{Bla+24}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Discrete Optimization}
+      \field{month}{8}
+      \field{title}{Vehicle routing with time-dependent travel times: Theory, practice, and benchmarks}
+      \field{volume}{53}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{pages}{100848}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.disopt.2024.100848
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S1572528624000276
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S1572528624000276
+      \endverb
+    \endentry
+    \entry{dabiaErratumBranchPrice2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=50a59f3cdab0ea1674be1e43126720f5}{%
+           family={Dabia},
+           familyi={D\bibinitperiod},
+           given={Said},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2938a57825fdb9a5a7f8c36d8fa2e37d}{%
+           family={Ropke},
+           familyi={R\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b63aeb723d16eafda6952b3b6992d5b3}{%
+           family={Van\bibnamedelima Woensel},
+           familyi={V\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d0962303b0cefe8e953e0596c9a620a}
+      \strng{fullhash}{5553a037f8ff111527e29fcab9f6129e}
+      \strng{fullhashraw}{5553a037f8ff111527e29fcab9f6129e}
+      \strng{bibnamehash}{5553a037f8ff111527e29fcab9f6129e}
+      \strng{authorbibnamehash}{5553a037f8ff111527e29fcab9f6129e}
+      \strng{authornamehash}{3d0962303b0cefe8e953e0596c9a620a}
+      \strng{authorfullhash}{5553a037f8ff111527e29fcab9f6129e}
+      \strng{authorfullhashraw}{5553a037f8ff111527e29fcab9f6129e}
+      \field{extraname}{2}
+      \field{labelalpha}{DRV24}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Transportation Science}
+      \field{month}{9}
+      \field{number}{5}
+      \field{title}{Erratum: “Branch and Price for the Time-Dependent Vehicle Routing Problem with Time Windows”}
+      \field{volume}{58}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{pages}{919\bibrangedash 924}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1287/trsc.2024.erratum.v58.n5
+      \endverb
+      \verb{urlraw}
+      \verb https://pubsonline.informs.org/doi/10.1287/trsc.2024.erratum.v58.n5
+      \endverb
+      \verb{url}
+      \verb https://pubsonline.informs.org/doi/10.1287/trsc.2024.erratum.v58.n5
+      \endverb
+    \endentry
+    \entry{rascoussierHexalyThreadScaling2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=263a1eb52ff05197f964446e7191ef98}{%
+           family={Rascoussier},
+           familyi={R\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{fullhash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{fullhashraw}{263a1eb52ff05197f964446e7191ef98}
+      \strng{bibnamehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authorbibnamehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authornamehash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authorfullhash}{263a1eb52ff05197f964446e7191ef98}
+      \strng{authorfullhashraw}{263a1eb52ff05197f964446e7191ef98}
+      \field{extraname}{5}
+      \field{labelalpha}{Ras26}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{extraalpha}{5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arxiv}
+      \field{title}{Thread Scaling of {Hexaly} on the {TDVRPTW} across Two Model Encodings. {An} Experimental Report: Binding Choice, Slice-Count Choice, and Two Thread Ladders}
+      \field{version}{2}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb 2608.10079
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2608.10079
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2608.10079
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

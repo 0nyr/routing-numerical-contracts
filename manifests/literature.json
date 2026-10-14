@@ -1,0 +1,23 @@
+[
+  {
+    "id": "visser",
+    "url": "https://repub.eur.nl/pub/100852/EI2017-23.pdf",
+    "sha256": "0c6f886b32d44a2ab075b3e32e5ca69d23cee46625a271b1653d7853f4926c8f"
+  },
+  {
+    "id": "blauth",
+    "url": "https://arxiv.org/pdf/2205.00889v2",
+    "sha256": "93b7d74743f58c1dfdf888a5f19c29ede55e6a18be780ec11c4364ad0e66fd5f"
+  },
+  {
+    "id": "nancy",
+    "url": "https://arxiv.org/pdf/2205.11449v2",
+    "sha256": "e61c4325e636b89d90c94db1b63a386b6f999c420b09f61d3c74d0de9d2891d4"
+  },
+  {
+    "id": "lera",
+    "sha256": "30ce93dd9be87d883eeb3a9d8cf0374dff6dba1b84ebfc6c3522119f90034a48",
+    "doi": "10.1002/net.21937",
+    "source_kind": "locally consulted literature"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [GCC 15.2.0]",
+    "platform": "Linux-6.18.38-x86_64-with-glibc2.42",
+    "routes": 898,
+    "fold_digest": "484e00177229635a811f6970dab809add66e552dc9c92b1a498ba7dbcff87e8d",
+    "sum_positive": 1e+16,
+    "left_positive": 1e+16,
+    "theta_interpolation": 1014.0000000000001,
+    "theta_direct": 1014.0
+  },
+  {
+    "python": "3.12.13 (main, Mar  3 2026, 12:39:30) [GCC 15.2.0]",
+    "platform": "Linux-6.18.38-x86_64-with-glibc2.42",
+    "routes": 898,
+    "fold_digest": "484e00177229635a811f6970dab809add66e552dc9c92b1a498ba7dbcff87e8d",
+    "sum_positive": 1.0000000000000002e+16,
+    "left_positive": 1e+16,
+    "theta_interpolation": 1014.0000000000001,
+    "theta_direct": 1014.0
+  },
+  {
+    "python": "3.13.13 (main, Apr  7 2026, 18:19:01) [GCC 15.2.0]",
+    "platform": "Linux-6.18.38-x86_64-with-glibc2.42",
+    "routes": 898,
+    "fold_digest": "484e00177229635a811f6970dab809add66e552dc9c92b1a498ba7dbcff87e8d",
+    "sum_positive": 1.0000000000000002e+16,
+    "left_positive": 1e+16,
+    "theta_interpolation": 1014.0000000000001,
+    "theta_direct": 1014.0
+  },
+  {
+    "python": "3.14.4 (main, Apr  7 2026, 13:13:20) [GCC 15.2.0]",
+    "platform": "Linux-6.18.38-x86_64-with-glibc2.42",
+    "routes": 898,
+    "fold_digest": "484e00177229635a811f6970dab809add66e552dc9c92b1a498ba7dbcff87e8d",
+    "sum_positive": 1.0000000000000002e+16,
+    "left_positive": 1e+16,
+    "theta_interpolation": 1014.0000000000001,
+    "theta_direct": 1014.0
+  }
+]

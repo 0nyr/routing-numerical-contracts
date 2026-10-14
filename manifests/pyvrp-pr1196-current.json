@@ -1,0 +1,11 @@
+{
+  "html_url": "https://github.com/PyVRP/PyVRP/pull/1196",
+  "number": 1196,
+  "title": "Switch back to floats",
+  "state": "closed",
+  "created_at": "2026-09-27T11:51:21Z",
+  "closed_at": "2026-09-30T21:38:33Z",
+  "merged_at": "2026-09-30T21:38:33Z",
+  "merge_commit_sha": "7eb42c44880857de65cda570b37717b4e5d403ac",
+  "body": "This PR closes #623.\r\n\r\n<details>\r\n\r\n**Notes**:\r\n\r\nPlease read our [contributing guidelines](https://pyvrp.org/dev/contributing.html) first.\r\nIn particular:\r\n\r\n- You must add tests when making code changes.\r\n  This keeps the code coverage level up, and helps ensure the changes work as intended.\r\n- When fixing a bug, you must add a test that would produce the bug in the master branch, and then show that it is fixed with the new code. \r\n- New code additions must be well formatted. Changes should pass the pre-commit workflow, which you can set up locally using [pre-commit](https://pre-commit.com/#intro). \r\n- Docstring additions must render correctly, including escapes and LaTeX.\r\n- Finally, it is essential that all contributions in this PR are license-compatible with PyVRP's MIT license.\r\n  Please check that this PR can be included into PyVRP under the MIT license.\r\n- You must disclose the use of LLMs/generative AI if you used such tools to write code.\r\n\r\n</details>\r\n"
+}

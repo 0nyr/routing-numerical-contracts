@@ -1,0 +1,143 @@
+% !TEX program = pdflatex
+\documentclass[11pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{microtype}
+\usepackage{mathtools,amssymb}
+\usepackage{booktabs,longtable,tabularx,array}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{listings}
+\usepackage{csquotes}
+\usepackage{xurl}
+\usepackage[backend=biber,style=alphabetic,sorting=none,language=american,maxcitenames=1,mincitenames=1,maxbibnames=6,minbibnames=6,alldates=ymd]{biblatex}
+\addbibresource{biblio.bib}
+\setcounter{biburlnumpenalty}{100}
+\setcounter{biburlucpenalty}{100}
+\setcounter{biburllcpenalty}{100}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage[section]{placeins}
+\usepackage{etoolbox}
+\makeatletter
+\let\tableinput\@@input
+% Avoid infinite footer shrinkage when the current LaTeX output routine splits a longtable page.
+% A minimal longtable reproduced the diagnostic. Finite footer shrinkage preserves its layout.
+\patchcmd{\LT@output}{\vss}{\vskip\z@ \@plus 1fil \@minus \textheight}{}{}
+\patchcmd{\LT@output}{\vss}{\vskip\z@ \@plus 1fil \@minus \textheight}{}{}
+\makeatother
+\setlength{\parskip}{0.6em}
+\setlength{\parindent}{1em}
+\newcommand{\fl}{\operatorname{fl}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Comp}{\operatorname{Compose}}
+\newcommand{\Emit}{\operatorname{Emit}}
+\newcommand{\Ready}{\operatorname{Ready}}
+\newcommand{\Restrict}{\operatorname{Restrict}}
+\newcommand{\Inv}{\operatorname{Cross}}
+\newcommand{\Interp}{\operatorname{Interp}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\contractone}{\texttt{td-fold/1}}
+\newcommand{\contracttwo}{\texttt{td-fold/2}}
+\input{tables/numbers}
+\lstset{basicstyle=\ttfamily\small,columns=fullflexible,keepspaces=true,frame=single,breaklines=true}
+\title{Numerical Contracts for Routing Solution Checkers\\[0.8ex]\large Contract compatibility, arithmetic alternatives and the design of a computational standard}
+\author{Florian Rascoussier\thanks{IMT Atlantique, Lab-STICC, CNRS, UMR 6285 (équipe DECIDE) and INSA Lyon, Inria, CITI, UR3720, 69621 Villeurbanne, France (équipe EMERAUDE). ORCID identifier: \href{https://orcid.org/0009-0005-3253-9814}{0009-0005-3253-9814}.}}
+\date{Research report, revised 14 October 2026}
+\hypersetup{pdftitle={Numerical Contracts for Routing Solution Checkers},pdfauthor={Florian Rascoussier}}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A routing solution checker defines the finite computation used to evaluate feasibility, compare incumbents and report optimization objectives. Changing its arithmetic can therefore change a benchmark contract even when the mathematical formulation is unchanged. We study the breaking transition from MAMUT-routing-lib 0.11.0 to 0.12.0, which replaced parts of the time-dependent composition protocol and introduced exact-decimal ranking for static incumbents. We reproduce both released computations, compare fixed routes with an independent rational reference, and investigate the available benchmark store. Both contracts accept the 898 original routes, but 31 of their 146 solution totals differ. The newer computation improves several fidelity measurements without providing a general exact-arithmetic contract. Static ranking differences are small in value but can change which incumbent is retained. We recommend restoring the historical time-dependent protocol for v0.13, preserving its limitations and the independent integrity repairs. We also examine numerical evaluation as a multiobjective design problem: binary64, integer scaling, rational arithmetic and higher or adaptive precision offer different balances of simplicity, expressiveness, computational cost and fidelity to declared data. Controlled Python measurements inform these trade-offs without claiming production solver performance.
+\end{abstract}
+
+\noindent\textbf{Keywords:} Vehicle routing, numerical contracts, time dependence, floating-point arithmetic, exact arithmetic, benchmark reproducibility.
+
+\tableofcontents
+\clearpage
+
+\section{Introduction}\label{sec:introduction}
+
+This report examines how a numerical checker becomes part of an optimization benchmark's definition, and what follows when that checker changes. The MAMUT-routing ecosystem provides routing instances, Best-Known Solutions (BKS), validation tools and a website for their distribution and comparison. Its shared library, MAMUT-routing-lib, supplies the cost and feasibility computations used by these components. Hence its checker is more than a final consistency test: together with the objective and incumbent-ranking policy, it determines what the ecosystem reports as a valid solution or an improvement \autocite{mamutRoutingPlatform2026,mamutChecker0112026,mamutChecker0122026}.
+
+We consider the Capacitated Vehicle Routing Problem (CVRP), the Vehicle Routing Problem with Time Windows (VRPTW), and their Time-Dependent (TD) counterparts, particularly the Time-Dependent Vehicle Routing Problem with Time Windows (TDVRPTW). In the time-dependent setting, the objective optimizes each route's depot departure to minimize its duration, then aggregates route durations under a prescribed rule. Solvers may use faster internal evaluation structures, but the reference checker defines the authoritative reported value. A change to that authority can affect accepted moves, stored incumbents, reference gaps and the interpretation of historical bounds or proofs \autocite{rascoussierKAYROSTechReport2026,rascoussierKAYROSAnytimeExact2026,rascoussierAnytimeSolverEvaluation2026}.
+
+The transition to library version 0.12 introduced a breaking numerical change. The preceding protocol, represented here by frozen release 0.11, applies one generic composition operation throughout the time-dependent route fold. Version 0.12 replaces several compositions with specialized transformations and introduces a unit-slope interpolation shortcut. It also changes static BKS ranking to an exact sum of decimal interpretations, although the ordinary static checker remains unchanged. The September campaign repriced incumbents and revised some route sets under these choices. We therefore need to distinguish a more faithful approximation to a chosen mathematical model from a compatible implementation of the established benchmark contract \autocite{mamutChecker0112026,mamutChecker0122026}.
+
+Our first contribution is a reproducible comparison of these contracts, including their numerical limitations and consequences for the benchmark store. Our second is a design analysis of the alternatives: the choice of arithmetic must balance fidelity with computational cost, representational freedom, reproducibility and implementation complexity. We use this evidence to recommend a scoped restoration of the historical TD protocol in v0.13. Static ranking is evaluated separately, since its effects and implementation costs differ from those of TD composition. All experiments evaluate fixed routes or previously available candidates, without new solver searches or renewed optimality proofs.
+
+\section{What the numerical contracts define}\label{sec:main-contracts}
+
+This section separates the input model, the evaluation recipe and the ranking policy. A complete contract maps byte-defined instance artifacts and a solution to a feasibility verdict and an objective value. It specifies parsing, arithmetic operations, comparisons, branch conventions and reduction order. The exact mathematical objective over ideal data, an exact objective over stored operands and the checker's computed value are distinct objects. A BKS is an incumbent under one such contract, not an optimality certificate by itself.
+
+A stored binary64 value is an exact dyadic rational. We can therefore evaluate the exact piecewise-affine model through those stored operands without introducing floating-point roundoff. Alternatively, we can treat their shortest decimal spellings as exact. These interpretations differ, just as the binary64 value written as \texttt{0.1} differs from the rational $1/10$. Neither interpretation reconstructs an unrounded road model or an ideal geometric distance. Our exact TD references use materialized Arrival-Time Functions (ATFs), so their exactness concerns those declared finite inputs and domain conventions \autocite{pythonFraction2026}.
+
+For TD routes, both releases fold arc ATFs and customer ready-time maps sequentially. The historical \contractone{} represents waiting and service through the same composition primitive as the arcs. The newer \contracttwo{} directly restricts the first arc and transforms ready times, with a slope shortcut based on equality of rounded endpoint differences. These replacements change the operation sequence and may change later breakpoint positions, branch choices and departures. Appendix~\ref{sec:recipes} gives both algorithms and their numerical primitives. Their shared use of binary64 does not make them the same contract.
+
+A simple witness illustrates the trade-off. With arrival $1009$, service $5$ and window $[250,12360]$, the generic interpolation of the ready-time map returns $1014.0000000000001$, whereas direct addition returns $1014$. The latter agrees with the intended waiting/service map in this example. However, changing a computed value by one representable step can move a later composition across an ATF jump. Conversely, the newer rounded unit-slope test can classify a mathematically non-unit segment as unit and worsen agreement with exact interpolation. Specialized arithmetic improves some cases without removing the need for a declared contract and boundary policy.
+
+For static routing, the released checker traverses submitted routes and adds every arc into one sequential accumulator. Version 0.12 preserves that computation, but stores canonically ordered routes and ranks candidates by exact sums of their decimal-interpreted arc costs. Thus the displayed checker cost and ranked objective can differ. We compare the historical submitted-order policy, canonical binary64 scoring and exact-decimal ranking separately, retaining the fleet tier of hierarchical objectives. Accurate summation alone is another possible contract, not an implementation of the prescribed sequential sum \autocite{pythonFsum2026,ogitaAccurateSum2005}.
+
+\section{Comparison method and principal evidence}\label{sec:main-evidence}
+
+This section reports the decisive fixed-route evidence and the controlled implementation comparisons. We freeze the released sources, instance artifacts and candidate routes. An independent rational oracle partitions the departure domain by forwarding boundaries through affine pieces, rather than importing the checker composition routine. It distinguishes breakpoint points from open intervals and attained minima from unattained infima. Appendix~\ref{sec:oracle} documents the oracle and isolated changes. Appendix~\ref{sec:protocol} gives coverage, selection and conformance checks. Source and distribution hashes, including the wheel-to-tag verification, appear in Appendix~\ref{app:reproduction}.
+
+The original panel contains 146 published Lera-Romero solutions and 898 routes on the canonical Dabia2013 artifacts. Both releases accept every route and solution. Their totals differ for 31 solutions, while each exactly reproduces 48 published totals. Matching historical published totals therefore does not identify a numerical winner. Against the correctly rounded exact optimum over binary operands, the historical fold matches 455 route values and the newer fold 494, with maximum absolute discrepancy about $7.79\times10^{-12}$ for both. We preserve these improvements when assessing the restoration recommendation \autocite{lera-romeroLinearEdgeCosts2020,dabiaBranchPriceTimeDependent2013,onyrInvestigation2026}.
+
+A composed route value and a returned executable departure also require separate checks. Generic forward replay rejects 30 historical-fold departures and 25 newer-fold departures on the original panel. Including feasible schedules whose replayed duration differs from the composed value gives 154 and 77 discrepancies. These counts concern specific rounded departure witnesses, not whole-route infeasibility. An exact optimum match likewise does not establish that a representable departure attains that optimum. The detailed diagnostics remain in Appendix~\ref{sec:original}.
+
+The available frozen store contains 1,956 static and 3,052 TD records. There are 20 missing static and 20 missing TD sidecars, retained in coverage denominators. On the available TD records, 871 totals change between the contracts, with maximum absolute difference 25 and no whole-route temporal-feasibility flips. The Rifki-30 witness changes from duration/departure $(1768,1301)$ to $(1743,1341)$, with the newer result agreeing with the rational reference. The 35-record broader exact panel contains 243 routes, and both exact input interpretations complete. These targeted and stored-route results establish incompatibility and several fidelity gains, without certifying every boundary or a new optimum.
+
+Static summation is sensitive to route order on 1,069 records in the tested permutations. The grouped cost helper differs from the flat checker on 924 records. Nevertheless, the maximum observed difference between a submitted flat total and its exact-decimal sum is about $2.57\times10^{-7}$, with maximum relative difference about $5.01\times10^{-15}$. All 818 tested integer-cost records agree exactly. Among the 31 campaign restorations that tie in exact-decimal cost, canonical binary64 scoring distinguishes 15 pairs, with maximum gap about $3.49\times10^{-10}$. Small value differences can therefore have a discrete incumbent-selection consequence. Appendix~\ref{sec:static} retains the full sweep.
+
+\input{study-results}
+
+\section{Arithmetic choice as a design problem}\label{sec:alternatives}
+
+This section considers the alternatives beyond the two released implementations. We treat contract design as a multiobjective problem because reducing one cost can increase another: fewer numerical branches simplify implementation and solver parity, exact arithmetic increases fidelity to declared operands, and a fixed integer scale can improve arithmetic predictability while restricting resolution. Expressiveness also matters, including fractional costs, non-unit slopes, discontinuities and exact equality at deadlines. The measured implementations occupy different points in this design space. We do not claim to compute a Pareto frontier over all possible designs.
+
+Binary64 retains a broad dynamic range and direct hardware support, but reproducibility requires a prescribed operation sequence and comparison policy. More accurate reduction, including compensated summation or \texttt{fsum}, can reduce static accumulation error without changing the stored arc operands. It does not repair roundoff inside TD composition or determine how to rank exact ties. These methods remain approximate at their finite output precision and must be identified if they replace historical scoring \autocite{goldbergFloatingPoint1991,ogitaAccurateSum2005,pythonFsum2026}.
+
+Integer scaling makes addition exact when every operand lies on the chosen grid and every finite-width intermediate fits its range. If an input does not lie on that grid, rounding it introduces quantization and a fixed resolution. Increasing the scale reduces that loss but consumes representable range. Arbitrary-size integers avoid fixed-width overflow, at a computational cost. General TD interpolation and boundary preimages can remain nonintegral even when input breakpoints are integers, so integer addition alone does not supply an exact general TD model. In our static panel, scale 1000 exactly preserves every consumed decimal arc and the objective within signed-64-bit range on 1,488 records. This is an eligibility result for consumed operands, not a range proof for all solver penalties or intermediates \autocite{rascoussierImpactScalingRounding2026}.
+
+PyVRP provides a practical illustration of this trade-off. Issue \#623 discusses awkward fractional-cost modeling, integer overflow and sentinel handling after earlier integer choices. The project subsequently merged PR \#1196, returning to floats, on September 30, 2026. This history shows that resolution, range, modeling convenience and numerical comparisons influence a solver's arithmetic design. It does not establish that either arithmetic type is universally preferable, nor that PyVRP's measurements transfer to this checker \autocite{woudaDoubles2024,woudaFloats2026}.
+
+Rational arithmetic supplies exact comparisons and interpolation for a specified finite rational input model, with arbitrary-size numerator and denominator growth. It still requires a domain convention, a departure representation and a policy for rounding reported values. Exact binary and decimal references differ after output rounding on 377 original routes, despite agreeing on whole-route feasibility. Exactness therefore requires choosing what is exact. Our measured independent oracle offers calibration and counterexample analysis, while its more expensive partitioning algorithm is not a prediction of rational production-solver throughput \autocite{zippoNancy2022,zippoPseudoInverseComposition2023}.
+
+Higher binary or decimal precision can reduce many errors while retaining finite rounding. Libraries such as MPFR provide controlled precision and rounding semantics, but correctly rounding each operation does not make a complete chain of finite operations exact. Interval or ball arithmetic can enclose values and certify separated comparisons. Adaptive precision with exact fallback is another option, especially when most comparisons are easy and a minority lie near boundaries. Exact ties and uncertain jump membership need explicit escalation or an unresolved outcome. Finally, storing segment intent explicitly can avoid inferring a unit slope from rounded endpoints, at the cost of changing the artifact representation. These options are conceptual in this report. Appendix~\ref{sec:oracle} discusses their obligations \autocite{mpfrManual2025,johanssonArb2017}.
+
+\section{Recommendation and limits}\label{sec:recommendation}
+
+This section connects the measured trade-offs to a scoped v0.13 recommendation. We recommend restoring the frozen historical \contractone{} protocol as the authoritative TD cost calculation, preserving the earlier releases and retaining independently justified integrity and interface repairs. The rationale is continuity of the benchmark objective and a simpler implementation based on one reusable composition primitive. It is not a claim that the old computation is mathematically exact or that the newer implementation provides no benefit. Its known jump amplification and departure-witness limitations remain part of the report and conformance fixtures.
+
+The restoration should specify the fold, input interpretation, comparisons, canonical TD aggregation and departure semantics. Incumbents must be repriced and selected under that declared contract while retaining their original values and source identities. Proof metadata must remain attached to the computation used by the prover. Repricing an incumbent does not transfer a lower bound or renew an optimality proof. Cache entries, saved runs, website history and reference scores likewise need the evaluator identity as well as the instance hash. Appendix~\ref{sec:campaign} separates these consequences from independent repairs.
+
+\input{static-recommendation}
+
+The controlled timings concern Python checkers, reduction kernels and the independent oracle on declared panels. We have not measured a migrated KAYROS solver, searched new routes or recertified historical proofs. Same-host interpreter parity and selected C++ expression diagnostics are not a cross-platform route-engine certificate. The missing sidecars and unavailable later campaign remain explicit gaps. These limits do not prevent a compatibility recommendation, but they bound efficiency, feasibility and optimality claims.
+
+The wider conclusion is that a computational standard must state its choices and preserve the evidence needed to revisit them. Exact references can coexist with an efficient operational authority without silently replacing its objective. Changing arithmetic, input resolution or incumbent ranking is a design decision whose benefits and obligations should be evaluated together.
+
+\section*{Acknowledgements}
+
+We thank Adrien Pichon for the collaboration on MAMUT-routing and the availability of the library implementations examined here. We thank Gonzalo Lera-Romero for making the original solver and solution records available, and the contributors to the benchmark collections and numerical software used in this investigation. This work is funded by the French National Research Agency (ANR) as part of the MAMUT project, ANR-22-CE22-0016, \enquote{Machine learning And Matheuristics algorithms for Urban Transportation}.
+
+\section*{Data Availability}
+
+The experiment code, frozen checker sources, compact input panels, candidate operands, numerical results and report sources are publicly available at \url{https://github.com/0nyr/routing-numerical-contracts}. Original code is MIT licensed, while retained source and benchmark data preserve their upstream terms. Appendix~\ref{app:reproduction} explains the archived evidence and external-input coverage. No public optimality certificate is created by this investigation.
+
+\section*{Declaration of AI Use}
+
+Generative AI tools were used throughout the preparation of this work, including GPT 6.1 Sol (OpenAI). They contributed to the experiment tooling, to experiment orchestration and analysis, and to the drafting of this report. Florian Rascoussier reviewed and revised all outputs from these tools and takes full responsibility for their use in the final content of the work.
+
+\printbibliography[heading=bibintoc]
+\clearpage
+\appendix
+\input{appendices}
+\input{study-appendix}
+\end{document}

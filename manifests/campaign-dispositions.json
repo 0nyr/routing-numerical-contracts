@@ -1,0 +1,178 @@
+{
+  "pins": {
+    "lib": "a9f7d9a718b1d7d2b5db6ccc470d6c20065ec836",
+    "publish": "0d48b4f383c4336af7de8a2f2cac0e8502da6c83",
+    "tools": "7e02980",
+    "data": "manifests/data-repositories.json"
+  },
+  "findings": [
+    {
+      "repositories": "data",
+      "source_paths": "benchmarks/Poryos2026; lib/relaxation.py",
+      "disposition": "twin-candidates",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "42 TD replacements and 1 static replacement improve under both frozen contracts on target instances. Preserve candidates and target evaluation identities."
+    },
+    {
+      "repositories": "lib",
+      "source_paths": "td/checker.py; td/pwlf.py",
+      "disposition": "contract-migration",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Reproduced step amplification, original panel and independent exact models. The old recipe conforms to the prescribed historical operations. The new rounded unit-slope predicate has a counterexample."
+    },
+    {
+      "repositories": "data",
+      "source_paths": "benchmarks/Mamut2026; lib/bks.py; lib/checker.py",
+      "disposition": "ranking-policy",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "31 restorations are exact decimal ties. Canonical binary scoring ranks 11 worse, 4 better, 16 tied. Exact decimal ranking is a policy change."
+    },
+    {
+      "repositories": "publish",
+      "source_paths": "site_assets/site.js; site_webapp.py",
+      "disposition": "separable-interface-repair",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Source diff removes URL-controlled payload sources and constrains href construction. No fresh security certification is claimed."
+    },
+    {
+      "repositories": "publish",
+      "source_paths": "site_assets/site.js",
+      "disposition": "separable-interface-repair",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Source diff defines the missing objective-aware sort helper. This does not depend on the numerical route recipe."
+    },
+    {
+      "repositories": "lib/publish",
+      "source_paths": "cvrplib.py; publish/site_payloads.py; publish/site_webapp.py",
+      "disposition": "separable-export-repair",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Source diff gates coordinate-only exports on whether coordinates define stored arc costs. Exporting a scaled or explicit-matrix instance requires its own model identity."
+    },
+    {
+      "repositories": "lib",
+      "source_paths": "cli.py",
+      "disposition": "separable-interface-repair",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Per-instance exception reporting is separate from the checker arithmetic. This review does not run every external solver adapter."
+    },
+    {
+      "repositories": "lib/publish",
+      "source_paths": "td/artifacts.py; publish/atf_cache.py",
+      "disposition": "separable-integrity-repair",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Pinned sidecar verification and cache invalidation do not require a new checker. All available source sidecars were hashed and checked against repository pins. A partial generated arc set cannot certify a full ATF digest."
+    },
+    {
+      "repositories": "lib",
+      "source_paths": "cli.py; artifacts.py",
+      "disposition": "separable-discovery-repair",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Source diff aligns family-first collection IDs with canonical discovery. Independent of arithmetic."
+    },
+    {
+      "repositories": "lib/publish",
+      "source_paths": "remote.py; publish/release_artifacts.py",
+      "disposition": "separable-discovery-repair",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Canonical archive extraction and collection markers fix discovery. The archive replacement limit is recorded under G-lib-io-solvers-12."
+    },
+    {
+      "repositories": "tools",
+      "source_paths": "family/family.py; staging.py",
+      "disposition": "separable-generation-repair",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Rebuilt traffic overlays must refresh their pins. Generation provenance remains required, and staged publication is atomic per file with recovery rather than a simultaneous whole-tree transaction."
+    },
+    {
+      "repositories": "tools",
+      "source_paths": "gui/solutions.py; generation/single.py; gui/server.py",
+      "disposition": "separable-integrity-repair-with-new-contract-gap",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Regeneration protection and instance hashes address changed artifacts. Legacy revalidation also needs a checker contract in its cache key. Changed checker costs are currently attributed to regeneration even on unchanged bytes."
+    },
+    {
+      "repositories": "tools",
+      "source_paths": "generation/td.py; family/tw_synthesis.py; staging.py",
+      "disposition": "generator-semantics-review",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Multi-route feasible anchors and splitting address capacity/deadline problems. Generated instances change and need generator/version provenance. No exhaustive generator audit is claimed."
+    },
+    {
+      "repositories": "lib",
+      "source_paths": "bks.py",
+      "disposition": "separable-candidate-validation",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Validation before storage is useful under either declared contract. Separate it from the changed exact-decimal ranking policy."
+    },
+    {
+      "repositories": "tools",
+      "source_paths": "generation/td.py",
+      "disposition": "separable-integrity-repair",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Source fingerprint checks trigger rebuilding stale twins. The fingerprint also needs to be interpreted with generator and evaluation identities."
+    },
+    {
+      "repositories": "tools",
+      "source_paths": "family/family.py",
+      "disposition": "separable-integrity-repair",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Source diff preserves the time-window repair record across rebuilds. This is separate from route arithmetic."
+    },
+    {
+      "repositories": "tools",
+      "source_paths": "cli.py",
+      "disposition": "separable-cost-reporting-repair",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Report checker cost and actual BKS store action rather than adapter-scaled solver cost. Checker identity must be included for future compatibility."
+    },
+    {
+      "repositories": "tools",
+      "source_paths": "generation/td.py; family/tw_synthesis.py",
+      "disposition": "generator-semantics-review",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Deadline lifting and traffic splitting need a declared generation/anchor policy. This review establishes separability, not preservation of every previous generated instance."
+    },
+    {
+      "repositories": "tools",
+      "source_paths": "generation/vrptw.py; family/tw_synthesis.py",
+      "disposition": "generator-semantics-review",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Multi-route window anchors address overly wide route-centered windows, but alter the generated finite problem and need version provenance."
+    },
+    {
+      "repositories": "publish",
+      "source_paths": "cli.py; site_webapp.py; site_assets/site.js",
+      "disposition": "separable-interface-repair",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Remove unsupported API payload mode. Independent of numerical route folding."
+    },
+    {
+      "repositories": "tools",
+      "source_paths": "gui/server.py",
+      "disposition": "separable-download-repair",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Exact selected instance stems replace broad prefix matching. This does not choose a numerical contract."
+    },
+    {
+      "repositories": "lib",
+      "source_paths": "remote.py",
+      "disposition": "mitigation-with-residual-data-loss",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Release-stamped extraction still replaces its existing subtree, so locally added BKS in that subtree can be lost. Retain the limit rather than claim complete protection."
+    },
+    {
+      "repositories": "publish",
+      "source_paths": "site_assets/site.js; site_payloads.py; docs/benchmarks/formats/cvrplib-export.md",
+      "disposition": "separable-export-documentation",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Export caveats should describe each actual cost representation, including scaled and full-precision families."
+    },
+    {
+      "repositories": "tools",
+      "source_paths": "family/family.py",
+      "disposition": "separable-generation-repair",
+      "review_scope": "Pinned source diff and scoped numerical experiments. No full independent security or generator certification.",
+      "conclusion": "Handle absent TDVRP twins when reusing traffic or generating only TDVRPTW. Staging reduces partial publication, with the per-file atomicity limit stated above."
+    }
+  ]
+}

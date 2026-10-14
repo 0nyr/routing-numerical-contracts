@@ -1,0 +1,88 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mamut-routing-lib"
+version = "0.12.0"
+description = "Modern Python library for CVRP and VRPTW benchmark models, validation, BKS management, and snapshot retrieval."
+readme = "README.md"
+authors = [
+    { name = "Florian Rascoussier", email = "onyr.maintainer@gmail.com" },
+    { name = "Adrien Pichon" },
+]
+maintainers = [
+    { name = "Florian Rascoussier", email = "onyr.maintainer@gmail.com" },
+]
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.0.0",
+]
+keywords = [
+    "combinatorial optimization",
+    "vehicle routing problem",
+    "VRP",
+    "CVRP",
+    "VRPTW",
+    "benchmarking",
+    "BKS",
+    "operations research",
+    "logistics",
+    "transportation",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.optional-dependencies]
+cli = [
+    "typer>=0.12",
+    "tqdm>=4.66",
+]
+pyvrp = [
+    "pyvrp>=0.13.4,<0.14", # ILS-based since 0.13 (HGS dropped upstream); wrapper ported accordingly
+    "numpy>=2.0.0",
+]
+
+[project.scripts]
+mamut-routing = "mamut_routing_lib.cli:app"
+
+[project.urls]
+ANR-MAMUT = "https://anr.fr/Project-ANR-22-CE22-0016"
+Organization = "https://github.com/ANR-MAMUT"
+Source = "https://github.com/ANR-MAMUT/MAMUT-routing-lib"
+Issues = "https://github.com/ANR-MAMUT/MAMUT-routing-lib/issues"
+MAMUT-routing = "https://github.com/ANR-MAMUT/MAMUT-routing"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mamut_routing_lib"]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    ".git",
+    ".gitignore",
+    ".pytest_cache",
+    "**/__pycache__",
+    "dist",
+    "build",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.0",
+    "typer>=0.12",
+    "tqdm>=4.66",
+    "pyvrp>=0.13.4,<0.14",
+    "numpy>=2.0.0",
+]

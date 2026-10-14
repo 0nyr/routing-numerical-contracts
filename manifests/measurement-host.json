@@ -1,0 +1,8 @@
+{
+  "captured_date": "2026-10-14",
+  "cpu_model": "12th Gen Intel(R) Core(TM) i7-12700H",
+  "logical_cpus": 20,
+  "platform": "Linux-6.18.38-x86_64-with-glibc2.42",
+  "cpu_affinity_policy": "OS default affinity, recorded in each controlled result; one experiment worker",
+  "host_scope": "shared development workstation, no exclusive reservation"
+}

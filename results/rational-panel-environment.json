@@ -1,0 +1,18 @@
+{
+  "python": "3.13.13 (main, Apr  7 2026, 18:19:01) [GCC 15.2.0]",
+  "platform": "Linux-6.18.38-x86_64-with-glibc2.42",
+  "variants": [
+    "v011",
+    "restriction",
+    "vertex",
+    "slope",
+    "v012"
+  ],
+  "exact": true,
+  "jobs": 4,
+  "input_count": 35,
+  "unavailable": [],
+  "evaluated_count": 0,
+  "reused_count": 35,
+  "correction": "The final resume reused 35 complete outputs. The old field incorrectly counted pending work as total selected input count."
+}

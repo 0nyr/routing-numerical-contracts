@@ -1,0 +1,17 @@
+[
+  {
+    "path": "data/s108-route-results.tar.gz",
+    "sha256": "8905c85be00ca265fa8441720899316dbaa43f9e5c828e277f7d6651e36e5287",
+    "kind": "tar"
+  },
+  {
+    "path": "data/static-history.json.gz",
+    "sha256": "5d4d0617d6796d954aaf56c8c978bca7cd4fb58b005d8d7e8f68c00619a2536c",
+    "kind": "gzip-json"
+  },
+  {
+    "path": "data/td-panels.tar.gz",
+    "sha256": "ca31bceac12489c54c6031e8733f0db592b8e1aee8cc767b98a3a9a44db0a2f5",
+    "kind": "tar"
+  }
+]

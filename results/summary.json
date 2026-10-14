@@ -1,0 +1,739 @@
+{
+  "original": {
+    "variants": {
+      "v011": {
+        "routes": 898,
+        "temporal_feasible": 898,
+        "generic_forward_rejection": 30,
+        "generic_forward_mismatch_or_rejection": 154,
+        "variant_forward_rejection": 30,
+        "variant_forward_mismatch_or_rejection": 154,
+        "reference_resource_limit": 0,
+        "reference_routes": 898,
+        "reference_feasibility_disagreement": 0,
+        "rational_value_equal": 29,
+        "rounded_rational_value_equal": 455,
+        "rational_forward_rejection": 148,
+        "maximum_absolute_error": 7.788417255990911e-12,
+        "median_fold_seconds": 0.00044922850793227553
+      },
+      "restriction": {
+        "routes": 898,
+        "temporal_feasible": 898,
+        "generic_forward_rejection": 27,
+        "generic_forward_mismatch_or_rejection": 151,
+        "variant_forward_rejection": 27,
+        "variant_forward_mismatch_or_rejection": 151,
+        "reference_resource_limit": 0,
+        "reference_routes": 898,
+        "reference_feasibility_disagreement": 0,
+        "rational_value_equal": 29,
+        "rounded_rational_value_equal": 452,
+        "rational_forward_rejection": 143,
+        "maximum_absolute_error": 7.788417255990911e-12,
+        "median_fold_seconds": 0.00038094249612186104
+      },
+      "vertex": {
+        "routes": 898,
+        "temporal_feasible": 898,
+        "generic_forward_rejection": 25,
+        "generic_forward_mismatch_or_rejection": 65,
+        "variant_forward_rejection": 25,
+        "variant_forward_mismatch_or_rejection": 65,
+        "reference_resource_limit": 0,
+        "reference_routes": 898,
+        "reference_feasibility_disagreement": 0,
+        "rational_value_equal": 29,
+        "rounded_rational_value_equal": 485,
+        "rational_forward_rejection": 145,
+        "maximum_absolute_error": 7.788417255990911e-12,
+        "median_fold_seconds": 0.00031030549143906683
+      },
+      "slope": {
+        "routes": 898,
+        "temporal_feasible": 898,
+        "generic_forward_rejection": 25,
+        "generic_forward_mismatch_or_rejection": 77,
+        "variant_forward_rejection": 25,
+        "variant_forward_mismatch_or_rejection": 54,
+        "reference_resource_limit": 0,
+        "reference_routes": 898,
+        "reference_feasibility_disagreement": 0,
+        "rational_value_equal": 29,
+        "rounded_rational_value_equal": 494,
+        "rational_forward_rejection": 140,
+        "maximum_absolute_error": 7.788417255990911e-12,
+        "median_fold_seconds": 0.0003724145208252594
+      },
+      "v012": {
+        "routes": 898,
+        "temporal_feasible": 898,
+        "generic_forward_rejection": 25,
+        "generic_forward_mismatch_or_rejection": 77,
+        "variant_forward_rejection": 25,
+        "variant_forward_mismatch_or_rejection": 54,
+        "reference_resource_limit": 0,
+        "reference_routes": 898,
+        "reference_feasibility_disagreement": 0,
+        "rational_value_equal": 29,
+        "rounded_rational_value_equal": 494,
+        "rational_forward_rejection": 140,
+        "maximum_absolute_error": 7.788417255990911e-12,
+        "median_fold_seconds": 0.00029606350290123373
+      },
+      "strict": {
+        "routes": 898,
+        "temporal_feasible": 898,
+        "generic_forward_rejection": 21,
+        "generic_forward_mismatch_or_rejection": 63,
+        "variant_forward_rejection": 22,
+        "variant_forward_mismatch_or_rejection": 57,
+        "reference_resource_limit": 0,
+        "reference_routes": 898,
+        "reference_feasibility_disagreement": 0,
+        "rational_value_equal": 29,
+        "rounded_rational_value_equal": 485,
+        "rational_forward_rejection": 137,
+        "maximum_absolute_error": 7.788417255990911e-12,
+        "median_fold_seconds": 0.00017563599976710975
+      }
+    },
+    "median_rational_seconds": 0.058163908499409445,
+    "maximum_rational_cuts": 71,
+    "maximum_rational_cut_bits": 954,
+    "input_models": {
+      "routes": 898,
+      "feasibility_disagreements": 0,
+      "exact_value_differences": 895,
+      "rounded_value_differences": 377,
+      "maximum_absolute_difference": 7.679846122490827e-12
+    },
+    "solutions": 146,
+    "changed_solution_totals": 31,
+    "matches_published": {
+      "v011": 48,
+      "v012": 48
+    },
+    "published_generic_forward_rejections": 22,
+    "published_exact_binary_forward_rejections": 111,
+    "structural_failures": 0
+  },
+  "static": {
+    "enumerated": 1976,
+    "complete": 1956,
+    "unavailable": [
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/auckland/n=1500/mamut-auckland-n1500-k12-poi/mamut-auckland-n1500-k12-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/auckland/n=1500/mamut-auckland-n1500-k12-poi/mamut-auckland-n1500-k12-poi.distances-fastest.json.gz'",
+        "seconds": 0.009713078005006537
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/bogota/n=4000/mamut-bogota-n4000-k508-poi/mamut-bogota-n4000-k508-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/bogota/n=4000/mamut-bogota-n4000-k508-poi/mamut-bogota-n4000-k508-poi.distances-fastest.json.gz'",
+        "seconds": 0.016556451009819284
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/dakar/n=1500/mamut-dakar-n1500-k364-poi/mamut-dakar-n1500-k364-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/dakar/n=1500/mamut-dakar-n1500-k364-poi/mamut-dakar-n1500-k364-poi.distances-fastest.json.gz'",
+        "seconds": 0.007548169000074267
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/manila/n=2500/mamut-manila-n2500-k54-poi/mamut-manila-n2500-k54-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/manila/n=2500/mamut-manila-n2500-k54-poi/mamut-manila-n2500-k54-poi.distances-fastest.json.gz'",
+        "seconds": 0.010014091996708885
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/montreal/n=4000/mamut-montreal-n4000-k378-poi/mamut-montreal-n4000-k378-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/montreal/n=4000/mamut-montreal-n4000-k378-poi/mamut-montreal-n4000-k378-poi.distances-fastest.json.gz'",
+        "seconds": 0.013057560019660741
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/paris/n=1500/mamut-paris-n1500-k107-poi/mamut-paris-n1500-k107-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/paris/n=1500/mamut-paris-n1500-k107-poi/mamut-paris-n1500-k107-poi.distances-fastest.json.gz'",
+        "seconds": 0.012035166990244761
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/prague/n=2000/mamut-prague-n2000-k13-poi/mamut-prague-n2000-k13-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/prague/n=2000/mamut-prague-n2000-k13-poi/mamut-prague-n2000-k13-poi.distances-fastest.json.gz'",
+        "seconds": 0.007804909982951358
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/singapore/n=4000/mamut-singapore-n4000-k498-poi/mamut-singapore-n4000-k498-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/singapore/n=4000/mamut-singapore-n4000-k498-poi/mamut-singapore-n4000-k498-poi.distances-fastest.json.gz'",
+        "seconds": 0.013514727004803717
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/sofia/n=1500/mamut-sofia-n1500-k114-poi/mamut-sofia-n1500-k114-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/sofia/n=1500/mamut-sofia-n1500-k114-poi/mamut-sofia-n1500-k114-poi.distances-fastest.json.gz'",
+        "seconds": 0.012126905989134684
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/vienna/n=1200/mamut-vienna-n1200-k130-poi/mamut-vienna-n1200-k130-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/vienna/n=1200/mamut-vienna-n1200-k130-poi/mamut-vienna-n1200-k130-poi.distances-fastest.json.gz'",
+        "seconds": 0.008448159991530702
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/auckland/n=1500/mamut-auckland-n1500-k12-poi/mamut-auckland-n1500-k12-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/auckland/n=1500/mamut-auckland-n1500-k12-poi/mamut-auckland-n1500-k12-poi.distances-shortest.json.gz'",
+        "seconds": 0.007300530996872112
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/bogota/n=4000/mamut-bogota-n4000-k508-poi/mamut-bogota-n4000-k508-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/bogota/n=4000/mamut-bogota-n4000-k508-poi/mamut-bogota-n4000-k508-poi.distances-shortest.json.gz'",
+        "seconds": 0.010667163995094597
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/dakar/n=1500/mamut-dakar-n1500-k364-poi/mamut-dakar-n1500-k364-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/dakar/n=1500/mamut-dakar-n1500-k364-poi/mamut-dakar-n1500-k364-poi.distances-shortest.json.gz'",
+        "seconds": 0.007058212999254465
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/manila/n=2500/mamut-manila-n2500-k54-poi/mamut-manila-n2500-k54-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/manila/n=2500/mamut-manila-n2500-k54-poi/mamut-manila-n2500-k54-poi.distances-shortest.json.gz'",
+        "seconds": 0.010624500020639971
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/montreal/n=4000/mamut-montreal-n4000-k378-poi/mamut-montreal-n4000-k378-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/montreal/n=4000/mamut-montreal-n4000-k378-poi/mamut-montreal-n4000-k378-poi.distances-shortest.json.gz'",
+        "seconds": 0.011402117001125589
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/paris/n=1500/mamut-paris-n1500-k107-poi/mamut-paris-n1500-k107-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/paris/n=1500/mamut-paris-n1500-k107-poi/mamut-paris-n1500-k107-poi.distances-shortest.json.gz'",
+        "seconds": 0.012038153974572197
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/prague/n=2000/mamut-prague-n2000-k13-poi/mamut-prague-n2000-k13-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/prague/n=2000/mamut-prague-n2000-k13-poi/mamut-prague-n2000-k13-poi.distances-shortest.json.gz'",
+        "seconds": 0.00834795698756352
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/singapore/n=4000/mamut-singapore-n4000-k498-poi/mamut-singapore-n4000-k498-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/singapore/n=4000/mamut-singapore-n4000-k498-poi/mamut-singapore-n4000-k498-poi.distances-shortest.json.gz'",
+        "seconds": 0.01066816199454479
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/sofia/n=1500/mamut-sofia-n1500-k114-poi/mamut-sofia-n1500-k114-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/sofia/n=1500/mamut-sofia-n1500-k114-poi/mamut-sofia-n1500-k114-poi.distances-shortest.json.gz'",
+        "seconds": 0.008556595974368975
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/vienna/n=1200/mamut-vienna-n1200-k130-poi/mamut-vienna-n1200-k130-poi.bks.MonoCost.json",
+        "status": "error",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/onyr/code/phd/VRPTW-benchmarks/papers/paper7/MAMUT-routing/benchmarks/Mamut2026/sidecars/vienna/n=1200/mamut-vienna-n1200-k130-poi/mamut-vienna-n1200-k130-poi.distances-shortest.json.gz'",
+        "seconds": 0.0072046800050884485
+      }
+    ],
+    "family_counts": {
+      "Mamut2026": 310,
+      "Poryos2026": 360,
+      "Dimacs2021": 468,
+      "Ortec2022": 350,
+      "Sintef2008": 468
+    },
+    "nonvalid": [],
+    "declared_mismatches": 0,
+    "ordering_sensitive": 1069,
+    "grouped_helper_differs": 924,
+    "binary_rational_temporal_flips": 0,
+    "decimal_rational_temporal_flips": 0,
+    "scale1000_exact_and_fits": 1488,
+    "ranking_changes": [
+      {
+        "id": "benchmarks/Mamut2026/CVRP/euclidean/arles/n=179/mamut-arles-n179-k11-par/mamut-arles-n179-k11-par.bks.MonoCost.json",
+        "binary_canonical_rank": 1,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/euclidean/athens/n=105/mamut-athens-n105-k7-poi/mamut-athens-n105-k7-poi.bks.MonoCost.json",
+        "binary_canonical_rank": 1,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/euclidean/barcelona/n=107/mamut-barcelona-n107-k8-poi/mamut-barcelona-n107-k8-poi.bks.MonoCost.json",
+        "binary_canonical_rank": 0,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/euclidean/berlin/n=145/mamut-berlin-n145-k11-hyb/mamut-berlin-n145-k11-hyb.bks.MonoCost.json",
+        "binary_canonical_rank": -1,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/euclidean/caen/n=192/mamut-caen-n192-k64-poi/mamut-caen-n192-k64-poi.bks.MonoCost.json",
+        "binary_canonical_rank": -1,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/euclidean/clermont_ferrand/n=129/mamut-clermont_ferrand-n129-k9-poi/mamut-clermont_ferrand-n129-k9-poi.bks.MonoCost.json",
+        "binary_canonical_rank": 1,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/euclidean/limoges/n=152/mamut-limoges-n152-k7-poi/mamut-limoges-n152-k7-poi.bks.MonoCost.json",
+        "binary_canonical_rank": -1,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/euclidean/new_york/n=142/mamut-new_york-n142-k9-hyb/mamut-new_york-n142-k9-hyb.bks.MonoCost.json",
+        "binary_canonical_rank": 1,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/euclidean/paris/n=171/mamut-paris-n171-k8-hyb/mamut-paris-n171-k8-hyb.bks.MonoCost.json",
+        "binary_canonical_rank": 1,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/euclidean/perpignan/n=132/mamut-perpignan-n132-k9-poi/mamut-perpignan-n132-k9-poi.bks.MonoCost.json",
+        "binary_canonical_rank": 1,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/euclidean/reykjavik/n=138/mamut-reykjavik-n138-k10-poi/mamut-reykjavik-n138-k10-poi.bks.MonoCost.json",
+        "binary_canonical_rank": 1,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/euclidean/sydney/n=118/mamut-sydney-n118-k9-poi/mamut-sydney-n118-k9-poi.bks.MonoCost.json",
+        "binary_canonical_rank": 0,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/euclidean/toronto/n=100/mamut-toronto-n100-k8-par/mamut-toronto-n100-k8-par.bks.MonoCost.json",
+        "binary_canonical_rank": -1,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/caen/n=192/mamut-caen-n192-k64-poi/mamut-caen-n192-k64-poi.bks.MonoCost.json",
+        "binary_canonical_rank": 1,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/manila/n=221/mamut-manila-n221-k48-hyb/mamut-manila-n221-k48-hyb.bks.MonoCost.json",
+        "binary_canonical_rank": 0,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/montreal/n=112/mamut-montreal-n112-k9-par/mamut-montreal-n112-k9-par.bks.MonoCost.json",
+        "binary_canonical_rank": 0,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/new_york/n=142/mamut-new_york-n142-k9-hyb/mamut-new_york-n142-k9-hyb.bks.MonoCost.json",
+        "binary_canonical_rank": 0,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/reykjavik/n=138/mamut-reykjavik-n138-k10-poi/mamut-reykjavik-n138-k10-poi.bks.MonoCost.json",
+        "binary_canonical_rank": 0,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/saint_malo/n=260/mamut-saint_malo-n260-k35-par/mamut-saint_malo-n260-k35-par.bks.MonoCost.json",
+        "binary_canonical_rank": 1,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/sydney/n=118/mamut-sydney-n118-k9-poi/mamut-sydney-n118-k9-poi.bks.MonoCost.json",
+        "binary_canonical_rank": 0,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/fastest/toulon/n=196/mamut-toulon-n196-k60-poi/mamut-toulon-n196-k60-poi.bks.MonoCost.json",
+        "binary_canonical_rank": 1,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/athens/n=105/mamut-athens-n105-k7-poi/mamut-athens-n105-k7-poi.bks.MonoCost.json",
+        "binary_canonical_rank": 0,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/berlin/n=145/mamut-berlin-n145-k11-hyb/mamut-berlin-n145-k11-hyb.bks.MonoCost.json",
+        "binary_canonical_rank": 0,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/london/n=115/mamut-london-n115-k9-hyb/mamut-london-n115-k9-hyb.bks.MonoCost.json",
+        "binary_canonical_rank": 0,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/new_york/n=142/mamut-new_york-n142-k9-hyb/mamut-new_york-n142-k9-hyb.bks.MonoCost.json",
+        "binary_canonical_rank": 0,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/paris/n=171/mamut-paris-n171-k8-hyb/mamut-paris-n171-k8-hyb.bks.MonoCost.json",
+        "binary_canonical_rank": 0,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/perpignan/n=132/mamut-perpignan-n132-k9-poi/mamut-perpignan-n132-k9-poi.bks.MonoCost.json",
+        "binary_canonical_rank": 1,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/reykjavik/n=138/mamut-reykjavik-n138-k10-poi/mamut-reykjavik-n138-k10-poi.bks.MonoCost.json",
+        "binary_canonical_rank": 0,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/rome/n=102/mamut-rome-n102-k9-poi/mamut-rome-n102-k9-poi.bks.MonoCost.json",
+        "binary_canonical_rank": 0,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/sydney/n=118/mamut-sydney-n118-k9-poi/mamut-sydney-n118-k9-poi.bks.MonoCost.json",
+        "binary_canonical_rank": 0,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Mamut2026/CVRP/shortest/toronto/n=100/mamut-toronto-n100-k8-par/mamut-toronto-n100-k8-par.bks.MonoCost.json",
+        "binary_canonical_rank": 0,
+        "decimal_rank": 0
+      },
+      {
+        "id": "benchmarks/Poryos2026/CVRP/fastest/hong_kong/n=500/poryos-hong_kong-n500-poi/poryos-hong_kong-n500-poi.bks.MonoCost.json",
+        "binary_canonical_rank": -1,
+        "decimal_rank": -1
+      }
+    ],
+    "rounded_exact_binary_matches": {
+      "submitted_flat": 1037,
+      "canonical_flat": 1022,
+      "route_grouped_sum": 1672,
+      "fsum": 1956
+    },
+    "binary_decimal_rounded_differences": 39
+  },
+  "panel": {
+    "variants": {
+      "v011": {
+        "routes": 243,
+        "temporal_feasible": 243,
+        "generic_forward_rejection": 3,
+        "generic_forward_mismatch_or_rejection": 42,
+        "variant_forward_rejection": 3,
+        "variant_forward_mismatch_or_rejection": 42,
+        "reference_resource_limit": 0,
+        "reference_routes": 243,
+        "reference_feasibility_disagreement": 0,
+        "rational_value_equal": 126,
+        "rounded_rational_value_equal": 151,
+        "rational_forward_rejection": 14,
+        "maximum_absolute_error": 8.337534131538293e-09,
+        "median_fold_seconds": 0.0031234879861585796
+      },
+      "restriction": {
+        "routes": 243,
+        "temporal_feasible": 243,
+        "generic_forward_rejection": 2,
+        "generic_forward_mismatch_or_rejection": 36,
+        "variant_forward_rejection": 2,
+        "variant_forward_mismatch_or_rejection": 36,
+        "reference_resource_limit": 0,
+        "reference_routes": 243,
+        "reference_feasibility_disagreement": 0,
+        "rational_value_equal": 131,
+        "rounded_rational_value_equal": 157,
+        "rational_forward_rejection": 11,
+        "maximum_absolute_error": 8.337534131538293e-09,
+        "median_fold_seconds": 0.002889299998059869
+      },
+      "vertex": {
+        "routes": 243,
+        "temporal_feasible": 243,
+        "generic_forward_rejection": 3,
+        "generic_forward_mismatch_or_rejection": 15,
+        "variant_forward_rejection": 3,
+        "variant_forward_mismatch_or_rejection": 15,
+        "reference_resource_limit": 0,
+        "reference_routes": 243,
+        "reference_feasibility_disagreement": 0,
+        "rational_value_equal": 139,
+        "rounded_rational_value_equal": 169,
+        "rational_forward_rejection": 14,
+        "maximum_absolute_error": 8.337534131538293e-09,
+        "median_fold_seconds": 0.00262513299821876
+      },
+      "slope": {
+        "routes": 243,
+        "temporal_feasible": 243,
+        "generic_forward_rejection": 2,
+        "generic_forward_mismatch_or_rejection": 8,
+        "variant_forward_rejection": 2,
+        "variant_forward_mismatch_or_rejection": 8,
+        "reference_resource_limit": 0,
+        "reference_routes": 243,
+        "reference_feasibility_disagreement": 0,
+        "rational_value_equal": 144,
+        "rounded_rational_value_equal": 175,
+        "rational_forward_rejection": 11,
+        "maximum_absolute_error": 8.337534131538293e-09,
+        "median_fold_seconds": 0.0029502139950636774
+      },
+      "v012": {
+        "routes": 243,
+        "temporal_feasible": 243,
+        "generic_forward_rejection": 2,
+        "generic_forward_mismatch_or_rejection": 8,
+        "variant_forward_rejection": 2,
+        "variant_forward_mismatch_or_rejection": 8,
+        "reference_resource_limit": 0,
+        "reference_routes": 243,
+        "reference_feasibility_disagreement": 0,
+        "rational_value_equal": 144,
+        "rounded_rational_value_equal": 175,
+        "rational_forward_rejection": 11,
+        "maximum_absolute_error": 8.337534131538293e-09,
+        "median_fold_seconds": 0.002472724998369813
+      },
+      "strict": {
+        "routes": 243,
+        "temporal_feasible": 243,
+        "generic_forward_rejection": 2,
+        "generic_forward_mismatch_or_rejection": 9,
+        "variant_forward_rejection": 2,
+        "variant_forward_mismatch_or_rejection": 9,
+        "reference_resource_limit": 0,
+        "reference_routes": 243,
+        "reference_feasibility_disagreement": 0,
+        "rational_value_equal": 144,
+        "rounded_rational_value_equal": 174,
+        "rational_forward_rejection": 11,
+        "maximum_absolute_error": 8.337534131538293e-09,
+        "median_fold_seconds": 0.0012358679960016161
+      }
+    },
+    "median_rational_seconds": 0.7090266019804403,
+    "maximum_rational_cuts": 1828,
+    "maximum_rational_cut_bits": 1503,
+    "input_models": {
+      "routes": 243,
+      "feasibility_disagreements": 0,
+      "exact_value_differences": 167,
+      "rounded_value_differences": 118,
+      "maximum_absolute_difference": 2.3576726843894916e-11
+    }
+  },
+  "td": {
+    "enumerated": 3072,
+    "complete": 3052,
+    "unavailable": [
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-berlin.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/7ddbe3f6b212c3c4d887ff3cf659160df5a0947f624f5b5e1937277d3e9236c2.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-berlin.atf.json.gz",
+        "materialize_seconds": 0.017938927019713446
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-cincinnati.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/472fb628d1a2779a14cc2290f22575b680efee40dca4e62e387837c87f7e4268.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-cincinnati.atf.json.gz",
+        "materialize_seconds": 0.017512914026156068
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-kyiv.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/ac905aa566dfe22726800b7287dba2128767f8fb7b48da604f3782e5b52b2b16.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-kyiv.atf.json.gz",
+        "materialize_seconds": 0.0180794500047341
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-london.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/f7d28a20818216bfb79ca44b2be131a51d170328c885fbec6e8998ca71aa652a.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-london.atf.json.gz",
+        "materialize_seconds": 0.017874217010103166
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-madrid.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/02678253967aab50a435c502b7e597b2881779b6be2fa17003ff8fb9ff27d997.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-madrid.atf.json.gz",
+        "materialize_seconds": 0.018398024985799566
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-nairobi.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/c6361407e17239cfd98ddd74e2da8fa7abe5aee511bd77bbae579a6c944d5d35.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-nairobi.atf.json.gz",
+        "materialize_seconds": 0.018976057996042073
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-new_york.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/b76007d3d5dab10080046ce4be276d27bd75843a1e837b16d9660483c607dcc9.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-new_york.atf.json.gz",
+        "materialize_seconds": 0.01779073997749947
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-san_francisco.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/2e42e450bc5e3caf555997546c0175766635cfed50e39e7367ade2e3a87f1a2a.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-san_francisco.atf.json.gz",
+        "materialize_seconds": 0.016561094991629943
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-sao_paulo.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/45c58d68d0c781712e0df9378889630b88545fb1e332495bed7350ecf837e3dd.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-sao_paulo.atf.json.gz",
+        "materialize_seconds": 0.018465200992068276
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-seattle.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/4986804d79e28bb34fd9dc29642d87ccc7c6a4ef37dfbf814d5ae12e61301b53.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=1000/Blauth-seattle.atf.json.gz",
+        "materialize_seconds": 0.01858797701424919
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-berlin.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/c16ec2f2608cdf39e3ea3549c2ad1fc492c85c420ca07283fb82cdb8096c8c13.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-berlin.atf.json.gz",
+        "materialize_seconds": 0.0259587150067091
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-cincinnati.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/e069c5608c8071bdeb864b30fe7cfcea001c8c629ee693155634c690b6cd4162.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-cincinnati.atf.json.gz",
+        "materialize_seconds": 0.026075276982737705
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-kyiv.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/514a5b49590046369ee8da879f984929adb502338db68e64b28962d55b9e75db.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-kyiv.atf.json.gz",
+        "materialize_seconds": 0.025678748002974316
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-london.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/ec1f74f6702c260a2e5d8502e1401ccfe089cc05a00e9eb3e11273dd6d8afba6.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-london.atf.json.gz",
+        "materialize_seconds": 0.02519401701283641
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-madrid.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/112e56963dae4308a7a1f804d06437c1909151d5ad49edb16677cce56ae822cd.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-madrid.atf.json.gz",
+        "materialize_seconds": 0.026109480008017272
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-nairobi.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/a7d11f2d6877f5a007b11d159d6d7330fb53059045b0a90960abb50acbc12caa.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-nairobi.atf.json.gz",
+        "materialize_seconds": 0.02606173002277501
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-new_york.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/147988e4af137aaa4efd5503a364ef330851eaf0e27f7a7561c3109e808f4996.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-new_york.atf.json.gz",
+        "materialize_seconds": 0.04426838000654243
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-san_francisco.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/9b17f911a949a132cd54d748add708dfb453c3dcaa33266f2c454fb32b08f5a0.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-san_francisco.atf.json.gz",
+        "materialize_seconds": 0.025958690996048972
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-sao_paulo.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/da3f630471df429c35b114d90ad5d2b1c210568cdbc9fec3e57884518ef22663.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-sao_paulo.atf.json.gz",
+        "materialize_seconds": 0.02812667901162058
+      },
+      {
+        "id": "benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-seattle.bks.FleetCostDuration.json",
+        "cache": "outputs/inputs/38e695c8fbb63a3a58ccec80542883ccd289a77a902b23b58093398ac22636c0.json",
+        "status": "unavailable",
+        "error": "FileNotFoundError: ATF sidecar not found: /home/onyr/code/phd/MAMUT-routing/benchmarks/TDVRPTW/Blauth2024/n=2000/Blauth-seattle.atf.json.gz",
+        "materialize_seconds": 0.025961328006815165
+      }
+    ],
+    "errors": [],
+    "changed_totals": 871,
+    "temporal_feasibility_flips": 0,
+    "structural_failures": 0,
+    "declared_mismatches": 0,
+    "family_counts": {
+      "Poryos2026": 720,
+      "Ari2018": 320,
+      "Dabia2013": 336,
+      "Lera2026": 960,
+      "Rifki2020": 360,
+      "Vu2020": 336,
+      "Blauth2024": 20
+    },
+    "maximum_absolute_total_difference": 25.0,
+    "replacement_ranks": {
+      "v011": {
+        "-1": 42
+      },
+      "v012": {
+        "-1": 42
+      }
+    },
+    "replacements": 42
+  },
+  "synthetic": {
+    "cases": 168,
+    "variants": {
+      "v011": {
+        "feasibility_disagreements": 1,
+        "exact_cost_disagreements": 11
+      },
+      "restriction": {
+        "feasibility_disagreements": 1,
+        "exact_cost_disagreements": 11
+      },
+      "vertex": {
+        "feasibility_disagreements": 0,
+        "exact_cost_disagreements": 1
+      },
+      "slope": {
+        "feasibility_disagreements": 0,
+        "exact_cost_disagreements": 1
+      },
+      "v012": {
+        "feasibility_disagreements": 0,
+        "exact_cost_disagreements": 1
+      },
+      "strict": {
+        "feasibility_disagreements": 0,
+        "exact_cost_disagreements": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "html_url": "https://github.com/PyVRP/PyVRP/issues/623",
+  "number": 623,
+  "title": "Switch back to doubles",
+  "state": "closed",
+  "created_at": "2024-06-26T10:28:38Z",
+  "closed_at": "2026-10-13T08:34:04Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "body": "#### Is your feature request related to a problem? Please describe\r\n\r\nModelling fractional costs (e.g., 21ct/km, 19.95 EUR/h) gets out of hand quick with all integer data. We have already seen that before, and this was one of the main motivators for 64-bit integers in #468. However, in #550 we need to do weird things to account for this again. Specifying fractional costs is just fundamentally awkward in integers.\r\n\r\nAdditionally, integers overflow. This has already caused at least one bug (e.g., #590) and makes the code more brittle because we need to work around the issue (e.g., #599, #586). Further, the lack of builtin support for infinity means we need to use a large `MAX_VALUE` constant instead to avoid the overflow problem - with limited success (e.g., fails in #617, #550).\r\n\r\nFloats have their own problems. For example, equality checks between floats needs some tolerance that is [a bit iffy](https://stackoverflow.com/q/17333/4316405).\r\n\r\n#### Describe the solution you'd like\r\n\r\nSwitch costs, distances, durations etc. back over to float or double, rather than the integral values we impose now. I want to revert #518, re-instate #47, and probably remove integer support instead.\r\n\r\n#### Describe alternatives you have considered\r\n\r\nThis will remain awkward in any other way, so there aren't really any. 64-bit integers give us a lot of flexibility already, but without hardware support for infinity (or NaN) and always the risk of overflows it does not seem to be worth it.\r\n\r\n#### Additional context\r\n\r\nMost of the double vs int discussions previously focused on performance (ints were a bit faster). Most of that was likely due to us using 32-bit integers, which are half the size of a double. We now use 64-bit integers since we need the extra space for modelling (see #468), so that should essentially remove the performance issue.\r\n"
+}
