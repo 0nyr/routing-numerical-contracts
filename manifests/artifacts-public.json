@@ -1,6 +1,7 @@
 {
   "scope": "public source, evidence and report snapshot; this manifest excluded from its own digest set",
   "files": {
+    ".gitattributes": "27044289117cabe1a31eefe02d26a7998545e4923f62e6a3e8a53e3bd10b73d8",
     ".gitignore": "a12b9079debf91110aeafbb1c04856e8bedb94de41e7a79bac4a6a863d4e34aa",
     "AGENTS.md": "41fba48ba99460d0776d0a899341beb03ffc81c18b3073a1331cf3012356648c",
     "DATA-LICENSES.md": "a7723cb9a53f248cfeb5e81f7a7ae0c34f421fbb2535976dfec5b78406f1bfe2",

@@ -1,0 +1,5 @@
+# Frozen upstream bytes retain their source whitespace and recorded digests.
+vendor/** -whitespace
+# Bibliography tools emit a final blank separator.
+report/*.bib whitespace=-blank-at-eof
+report/*.bbl whitespace=-blank-at-eof
