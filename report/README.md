@@ -4,6 +4,8 @@ Research report comparing MAMUT-routing-lib 0.11.0 and 0.12.0 as distinct comput
 
 The public companion repository is [routing-numerical-contracts](https://github.com/0nyr/routing-numerical-contracts), cloned at `/home/onyr/code/phd/routing-numerical-contracts`. It contains the numerical code, compact input panels, historical candidate operands, provenance manifests and results, together with a synchronized report snapshot. The original private s108 investigation remains preserved independently.
 
+The current bibliography records the agreed KAYROS and MAMUT author lists and cites the public KAYROS technical report v3. These citation updates preserve the experiment source revisions, frozen vendor files and numerical evidence. The report remains authored by Florian Rascoussier.
+
 ## Build
 
 From `/home/onyr/code/phd/report`:

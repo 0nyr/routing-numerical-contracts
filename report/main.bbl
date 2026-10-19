@@ -20,21 +20,53 @@
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
     \entry{mamutRoutingPlatform2026}{software}{}{}
-      \name{author}{1}{}{%
-        {{hash=e3268bd6ad768124521f70c023133a95}{%
-           family={{ANR MAMUT}},
-           familyi={A\bibinitperiod}}}%
+      \name{author}{7}{}{%
+        {{hash=0736c2fcc0ba1440e8f73204a0be7d74}{%
+           family={Pichon},
+           familyi={P\bibinitperiod},
+           given={Adrien},
+           giveni={A\bibinitperiod}}}%
+        {{hash=263a1eb52ff05197f964446e7191ef98}{%
+           family={Rascoussier},
+           familyi={R\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=af6ee46bc57b0227e6959e50b19824ea}{%
+           family={Billot},
+           familyi={B\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod}}}%
+        {{hash=16bf7b88d4bd3ead7ff66f9909fd7fe9}{%
+           family={Fahed},
+           familyi={F\bibinitperiod},
+           given={Lina},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7afca4eee3c38e6892b3d3e30208f934}{%
+           family={Olteanu},
+           familyi={O\bibinitperiod},
+           given={Alexandru-Liviu},
+           giveni={A\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=e84660bb2951d7c85295644540d03054}{%
+           family={Sevaux},
+           familyi={S\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=06801325150e7eb386e08c097fbbe0da}{%
+           family={Solnon},
+           familyi={S\bibinitperiod},
+           given={Christine},
+           giveni={C\bibinitperiod}}}%
       }
-      \strng{namehash}{e3268bd6ad768124521f70c023133a95}
-      \strng{fullhash}{e3268bd6ad768124521f70c023133a95}
-      \strng{fullhashraw}{e3268bd6ad768124521f70c023133a95}
-      \strng{bibnamehash}{e3268bd6ad768124521f70c023133a95}
-      \strng{authorbibnamehash}{e3268bd6ad768124521f70c023133a95}
-      \strng{authornamehash}{e3268bd6ad768124521f70c023133a95}
-      \strng{authorfullhash}{e3268bd6ad768124521f70c023133a95}
-      \strng{authorfullhashraw}{e3268bd6ad768124521f70c023133a95}
+      \strng{namehash}{2cc51c75b8b6188e1e340ae3d0bf8aa4}
+      \strng{fullhash}{33852c1af371c44f2409f4ef084d09af}
+      \strng{fullhashraw}{33852c1af371c44f2409f4ef084d09af}
+      \strng{bibnamehash}{f369b375330ff45bd93f0343a04e12b2}
+      \strng{authorbibnamehash}{f369b375330ff45bd93f0343a04e12b2}
+      \strng{authornamehash}{2cc51c75b8b6188e1e340ae3d0bf8aa4}
+      \strng{authorfullhash}{33852c1af371c44f2409f4ef084d09af}
+      \strng{authorfullhashraw}{33852c1af371c44f2409f4ef084d09af}
       \field{extraname}{1}
-      \field{labelalpha}{ANR26}
+      \field{labelalpha}{Pic+26}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{extraalpha}{1}
@@ -52,21 +84,53 @@
       \endverb
     \endentry
     \entry{mamutChecker0112026}{software}{}{}
-      \name{author}{1}{}{%
-        {{hash=e3268bd6ad768124521f70c023133a95}{%
-           family={{ANR MAMUT}},
-           familyi={A\bibinitperiod}}}%
+      \name{author}{7}{}{%
+        {{hash=0736c2fcc0ba1440e8f73204a0be7d74}{%
+           family={Pichon},
+           familyi={P\bibinitperiod},
+           given={Adrien},
+           giveni={A\bibinitperiod}}}%
+        {{hash=263a1eb52ff05197f964446e7191ef98}{%
+           family={Rascoussier},
+           familyi={R\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=af6ee46bc57b0227e6959e50b19824ea}{%
+           family={Billot},
+           familyi={B\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod}}}%
+        {{hash=16bf7b88d4bd3ead7ff66f9909fd7fe9}{%
+           family={Fahed},
+           familyi={F\bibinitperiod},
+           given={Lina},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7afca4eee3c38e6892b3d3e30208f934}{%
+           family={Olteanu},
+           familyi={O\bibinitperiod},
+           given={Alexandru-Liviu},
+           giveni={A\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=e84660bb2951d7c85295644540d03054}{%
+           family={Sevaux},
+           familyi={S\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=06801325150e7eb386e08c097fbbe0da}{%
+           family={Solnon},
+           familyi={S\bibinitperiod},
+           given={Christine},
+           giveni={C\bibinitperiod}}}%
       }
-      \strng{namehash}{e3268bd6ad768124521f70c023133a95}
-      \strng{fullhash}{e3268bd6ad768124521f70c023133a95}
-      \strng{fullhashraw}{e3268bd6ad768124521f70c023133a95}
-      \strng{bibnamehash}{e3268bd6ad768124521f70c023133a95}
-      \strng{authorbibnamehash}{e3268bd6ad768124521f70c023133a95}
-      \strng{authornamehash}{e3268bd6ad768124521f70c023133a95}
-      \strng{authorfullhash}{e3268bd6ad768124521f70c023133a95}
-      \strng{authorfullhashraw}{e3268bd6ad768124521f70c023133a95}
+      \strng{namehash}{2cc51c75b8b6188e1e340ae3d0bf8aa4}
+      \strng{fullhash}{33852c1af371c44f2409f4ef084d09af}
+      \strng{fullhashraw}{33852c1af371c44f2409f4ef084d09af}
+      \strng{bibnamehash}{f369b375330ff45bd93f0343a04e12b2}
+      \strng{authorbibnamehash}{f369b375330ff45bd93f0343a04e12b2}
+      \strng{authornamehash}{2cc51c75b8b6188e1e340ae3d0bf8aa4}
+      \strng{authorfullhash}{33852c1af371c44f2409f4ef084d09af}
+      \strng{authorfullhashraw}{33852c1af371c44f2409f4ef084d09af}
       \field{extraname}{2}
-      \field{labelalpha}{ANR26}
+      \field{labelalpha}{Pic+26}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{extraalpha}{2}
@@ -84,21 +148,53 @@
       \endverb
     \endentry
     \entry{mamutChecker0122026}{software}{}{}
-      \name{author}{1}{}{%
-        {{hash=e3268bd6ad768124521f70c023133a95}{%
-           family={{ANR MAMUT}},
-           familyi={A\bibinitperiod}}}%
+      \name{author}{7}{}{%
+        {{hash=0736c2fcc0ba1440e8f73204a0be7d74}{%
+           family={Pichon},
+           familyi={P\bibinitperiod},
+           given={Adrien},
+           giveni={A\bibinitperiod}}}%
+        {{hash=263a1eb52ff05197f964446e7191ef98}{%
+           family={Rascoussier},
+           familyi={R\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=af6ee46bc57b0227e6959e50b19824ea}{%
+           family={Billot},
+           familyi={B\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod}}}%
+        {{hash=16bf7b88d4bd3ead7ff66f9909fd7fe9}{%
+           family={Fahed},
+           familyi={F\bibinitperiod},
+           given={Lina},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7afca4eee3c38e6892b3d3e30208f934}{%
+           family={Olteanu},
+           familyi={O\bibinitperiod},
+           given={Alexandru-Liviu},
+           giveni={A\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=e84660bb2951d7c85295644540d03054}{%
+           family={Sevaux},
+           familyi={S\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=06801325150e7eb386e08c097fbbe0da}{%
+           family={Solnon},
+           familyi={S\bibinitperiod},
+           given={Christine},
+           giveni={C\bibinitperiod}}}%
       }
-      \strng{namehash}{e3268bd6ad768124521f70c023133a95}
-      \strng{fullhash}{e3268bd6ad768124521f70c023133a95}
-      \strng{fullhashraw}{e3268bd6ad768124521f70c023133a95}
-      \strng{bibnamehash}{e3268bd6ad768124521f70c023133a95}
-      \strng{authorbibnamehash}{e3268bd6ad768124521f70c023133a95}
-      \strng{authornamehash}{e3268bd6ad768124521f70c023133a95}
-      \strng{authorfullhash}{e3268bd6ad768124521f70c023133a95}
-      \strng{authorfullhashraw}{e3268bd6ad768124521f70c023133a95}
+      \strng{namehash}{2cc51c75b8b6188e1e340ae3d0bf8aa4}
+      \strng{fullhash}{33852c1af371c44f2409f4ef084d09af}
+      \strng{fullhashraw}{33852c1af371c44f2409f4ef084d09af}
+      \strng{bibnamehash}{f369b375330ff45bd93f0343a04e12b2}
+      \strng{authorbibnamehash}{f369b375330ff45bd93f0343a04e12b2}
+      \strng{authornamehash}{2cc51c75b8b6188e1e340ae3d0bf8aa4}
+      \strng{authorfullhash}{33852c1af371c44f2409f4ef084d09af}
+      \strng{authorfullhashraw}{33852c1af371c44f2409f4ef084d09af}
       \field{extraname}{3}
-      \field{labelalpha}{ANR26}
+      \field{labelalpha}{Pic+26}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{extraalpha}{3}
@@ -116,23 +212,38 @@
       \endverb
     \endentry
     \entry{rascoussierKAYROSTechReport2026}{online}{}{}
-      \name{author}{1}{}{%
+      \name{author}{4}{}{%
         {{hash=263a1eb52ff05197f964446e7191ef98}{%
            family={Rascoussier},
            familyi={R\bibinitperiod},
            given={Florian},
            giveni={F\bibinitperiod}}}%
+        {{hash=af6ee46bc57b0227e6959e50b19824ea}{%
+           family={Billot},
+           familyi={B\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod}}}%
+        {{hash=16bf7b88d4bd3ead7ff66f9909fd7fe9}{%
+           family={Fahed},
+           familyi={F\bibinitperiod},
+           given={Lina},
+           giveni={L\bibinitperiod}}}%
+        {{hash=06801325150e7eb386e08c097fbbe0da}{%
+           family={Solnon},
+           familyi={S\bibinitperiod},
+           given={Christine},
+           giveni={C\bibinitperiod}}}%
       }
-      \strng{namehash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{fullhash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{fullhashraw}{263a1eb52ff05197f964446e7191ef98}
-      \strng{bibnamehash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{authorbibnamehash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{authornamehash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{authorfullhash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{authorfullhashraw}{263a1eb52ff05197f964446e7191ef98}
+      \strng{namehash}{efd57ccb8e9885895c0eea6b2171e500}
+      \strng{fullhash}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{fullhashraw}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{bibnamehash}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{authorbibnamehash}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{authornamehash}{efd57ccb8e9885895c0eea6b2171e500}
+      \strng{authorfullhash}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{authorfullhashraw}{72e87b87bdb4f9a8c07899f49006263d}
       \field{extraname}{1}
-      \field{labelalpha}{Ras26}
+      \field{labelalpha}{Ras+26}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{extraalpha}{1}
@@ -140,37 +251,54 @@
       \field{labeltitlesource}{title}
       \field{eprintclass}{math.OC}
       \field{eprinttype}{arxiv}
+      \field{note}{Version 3 revised on {arXiv} 2026-10-16}
       \field{title}{{KAYROS}: An Anytime and Exact Open-Source Solver for Duration-Minimization Time-Dependent Vehicle Routing. {A} Technical Report and a Case Study in Human-{AI} Engineering}
+      \field{version}{3}
       \field{year}{2026}
       \field{dateera}{ce}
       \verb{eprint}
       \verb 2607.23116
       \endverb
       \verb{urlraw}
-      \verb https://arxiv.org/abs/2607.23116
+      \verb https://arxiv.org/abs/2607.23116v3
       \endverb
       \verb{url}
-      \verb https://arxiv.org/abs/2607.23116
+      \verb https://arxiv.org/abs/2607.23116v3
       \endverb
     \endentry
     \entry{rascoussierKAYROSAnytimeExact2026}{online}{}{}
-      \name{author}{1}{}{%
+      \name{author}{4}{}{%
         {{hash=263a1eb52ff05197f964446e7191ef98}{%
            family={Rascoussier},
            familyi={R\bibinitperiod},
            given={Florian},
            giveni={F\bibinitperiod}}}%
+        {{hash=af6ee46bc57b0227e6959e50b19824ea}{%
+           family={Billot},
+           familyi={B\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod}}}%
+        {{hash=16bf7b88d4bd3ead7ff66f9909fd7fe9}{%
+           family={Fahed},
+           familyi={F\bibinitperiod},
+           given={Lina},
+           giveni={L\bibinitperiod}}}%
+        {{hash=06801325150e7eb386e08c097fbbe0da}{%
+           family={Solnon},
+           familyi={S\bibinitperiod},
+           given={Christine},
+           giveni={C\bibinitperiod}}}%
       }
-      \strng{namehash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{fullhash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{fullhashraw}{263a1eb52ff05197f964446e7191ef98}
-      \strng{bibnamehash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{authorbibnamehash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{authornamehash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{authorfullhash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{authorfullhashraw}{263a1eb52ff05197f964446e7191ef98}
+      \strng{namehash}{efd57ccb8e9885895c0eea6b2171e500}
+      \strng{fullhash}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{fullhashraw}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{bibnamehash}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{authorbibnamehash}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{authornamehash}{efd57ccb8e9885895c0eea6b2171e500}
+      \strng{authorfullhash}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{authorfullhashraw}{72e87b87bdb4f9a8c07899f49006263d}
       \field{extraname}{2}
-      \field{labelalpha}{Ras26}
+      \field{labelalpha}{Ras+26}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{extraalpha}{2}
@@ -192,23 +320,38 @@
       \endverb
     \endentry
     \entry{rascoussierAnytimeSolverEvaluation2026}{online}{}{}
-      \name{author}{1}{}{%
+      \name{author}{4}{}{%
         {{hash=263a1eb52ff05197f964446e7191ef98}{%
            family={Rascoussier},
            familyi={R\bibinitperiod},
            given={Florian},
            giveni={F\bibinitperiod}}}%
+        {{hash=af6ee46bc57b0227e6959e50b19824ea}{%
+           family={Billot},
+           familyi={B\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod}}}%
+        {{hash=16bf7b88d4bd3ead7ff66f9909fd7fe9}{%
+           family={Fahed},
+           familyi={F\bibinitperiod},
+           given={Lina},
+           giveni={L\bibinitperiod}}}%
+        {{hash=06801325150e7eb386e08c097fbbe0da}{%
+           family={Solnon},
+           familyi={S\bibinitperiod},
+           given={Christine},
+           giveni={C\bibinitperiod}}}%
       }
-      \strng{namehash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{fullhash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{fullhashraw}{263a1eb52ff05197f964446e7191ef98}
-      \strng{bibnamehash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{authorbibnamehash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{authornamehash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{authorfullhash}{263a1eb52ff05197f964446e7191ef98}
-      \strng{authorfullhashraw}{263a1eb52ff05197f964446e7191ef98}
+      \strng{namehash}{efd57ccb8e9885895c0eea6b2171e500}
+      \strng{fullhash}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{fullhashraw}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{bibnamehash}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{authorbibnamehash}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{authornamehash}{efd57ccb8e9885895c0eea6b2171e500}
+      \strng{authorfullhash}{72e87b87bdb4f9a8c07899f49006263d}
+      \strng{authorfullhashraw}{72e87b87bdb4f9a8c07899f49006263d}
       \field{extraname}{3}
-      \field{labelalpha}{Ras26}
+      \field{labelalpha}{Ras+26}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{extraalpha}{3}
@@ -464,11 +607,11 @@
       \strng{authornamehash}{263a1eb52ff05197f964446e7191ef98}
       \strng{authorfullhash}{263a1eb52ff05197f964446e7191ef98}
       \strng{authorfullhashraw}{263a1eb52ff05197f964446e7191ef98}
-      \field{extraname}{4}
+      \field{extraname}{1}
       \field{labelalpha}{Ras26}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{extraalpha}{4}
+      \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{14}
@@ -560,9 +703,11 @@
       \strng{authornamehash}{efd57ccb8e9885895c0eea6b2171e500}
       \strng{authorfullhash}{72e87b87bdb4f9a8c07899f49006263d}
       \strng{authorfullhashraw}{72e87b87bdb4f9a8c07899f49006263d}
+      \field{extraname}{4}
       \field{labelalpha}{Ras+26}
       \field{sortinit}{8}
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{extraalpha}{4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{16th {{Metaheuristics International Conference}} ({{MIC}})}
@@ -1030,11 +1175,11 @@
       \strng{authornamehash}{263a1eb52ff05197f964446e7191ef98}
       \strng{authorfullhash}{263a1eb52ff05197f964446e7191ef98}
       \strng{authorfullhashraw}{263a1eb52ff05197f964446e7191ef98}
-      \field{extraname}{5}
+      \field{extraname}{2}
       \field{labelalpha}{Ras26}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{extraalpha}{5}
+      \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arxiv}
