@@ -249,21 +249,27 @@
       \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{day}{19}
       \field{eprintclass}{math.OC}
       \field{eprinttype}{arxiv}
-      \field{note}{Version 3 revised on {arXiv} 2026-10-16}
+      \field{month}{10}
+      \field{note}{Revised on {arXiv} 2026-10-19}
       \field{title}{{KAYROS}: An Anytime and Exact Open-Source Solver for Duration-Minimization Time-Dependent Vehicle Routing. {A} Technical Report and a Case Study in Human-{AI} Engineering}
-      \field{version}{3}
+      \field{urlday}{20}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{version}{4}
       \field{year}{2026}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \verb{eprint}
       \verb 2607.23116
       \endverb
       \verb{urlraw}
-      \verb https://arxiv.org/abs/2607.23116v3
+      \verb https://arxiv.org/abs/2607.23116v4
       \endverb
       \verb{url}
-      \verb https://arxiv.org/abs/2607.23116v3
+      \verb https://arxiv.org/abs/2607.23116v4
       \endverb
     \endentry
     \entry{rascoussierKAYROSAnytimeExact2026}{online}{}{}
@@ -304,19 +310,26 @@
       \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{day}{19}
       \field{eprinttype}{arxiv}
-      \field{note}{Extended version. Local source revision dated 2026-09-29}
-      \field{title}{{KAYROS}: An Anytime and Exact Solver for the Time-Dependent Vehicle Routing Problem with Time Windows}
+      \field{month}{10}
+      \field{note}{Revised on {arXiv} 2026-10-19}
+      \field{title}{{KAYROS}: An Anytime and Exact Solver for the Time-Dependent Vehicle Routing Problem with Time Windows - Extended Version}
+      \field{urlday}{20}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{version}{3}
       \field{year}{2026}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \verb{eprint}
       \verb 2609.29597
       \endverb
       \verb{urlraw}
-      \verb https://arxiv.org/abs/2609.29597
+      \verb https://arxiv.org/abs/2609.29597v3
       \endverb
       \verb{url}
-      \verb https://arxiv.org/abs/2609.29597
+      \verb https://arxiv.org/abs/2609.29597v3
       \endverb
     \endentry
     \entry{rascoussierAnytimeSolverEvaluation2026}{online}{}{}
@@ -357,19 +370,26 @@
       \field{extraalpha}{3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{day}{19}
       \field{eprinttype}{arxiv}
-      \field{note}{Extended version}
-      \field{title}{Anytime Solver Evaluation with a Normalized Signed Primal Integral and Explicit Reference Policies}
+      \field{month}{10}
+      \field{note}{Revised on {arXiv} 2026-10-19}
+      \field{title}{Anytime Solver Evaluation with a Normalized Signed Primal Integral and Explicit Reference Policies - Extended Version}
+      \field{urlday}{20}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{version}{3}
       \field{year}{2026}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \verb{eprint}
       \verb 2608.18288
       \endverb
       \verb{urlraw}
-      \verb https://arxiv.org/abs/2608.18288
+      \verb https://arxiv.org/abs/2608.18288v3
       \endverb
       \verb{url}
-      \verb https://arxiv.org/abs/2608.18288
+      \verb https://arxiv.org/abs/2608.18288v3
       \endverb
     \endentry
     \entry{pythonFraction2026}{online}{}{}
@@ -1182,19 +1202,26 @@
       \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{day}{19}
       \field{eprinttype}{arxiv}
+      \field{month}{10}
+      \field{note}{Revised on {arXiv} 2026-10-19}
       \field{title}{Thread Scaling of {Hexaly} on the {TDVRPTW} across Two Model Encodings. {An} Experimental Report: Binding Choice, Slice-Count Choice, and Two Thread Ladders}
-      \field{version}{2}
+      \field{urlday}{20}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{version}{3}
       \field{year}{2026}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \verb{eprint}
       \verb 2608.10079
       \endverb
       \verb{urlraw}
-      \verb https://arxiv.org/abs/2608.10079
+      \verb https://arxiv.org/abs/2608.10079v3
       \endverb
       \verb{url}
-      \verb https://arxiv.org/abs/2608.10079
+      \verb https://arxiv.org/abs/2608.10079v3
       \endverb
     \endentry
   \enddatalist
